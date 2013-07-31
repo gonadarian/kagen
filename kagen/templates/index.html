@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% load humanize %}
+{% load i18n %}
+
+{% block details %}
+    <h2>{% trans "Translation Progress Report" %}</h2>
+    <p><em>
+        {% trans "Our mission is a free world-class education for anyone anywhere." %}<br>{% trans "Join us! Let's translate to Serbian together!" %}
+    </em></p>
+{% endblock %}
+
+{% block content %}
+<h3>{% trans "Meet Khan Academy" %}</h3>
+<div class="video">
+    <iframe src="http://embed.ted.com/talks/lang/sr/salman_khan_let_s_use_video_to_reinvent_education.html" width="853" height="480" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+</div>
+<div class="clear"></div>
+<div id="list">
+    <h3>{% trans "Content" %}</h3>
+    <h4>{% trans "Videos" %}</h4>
+    <p>{{ 1|ordinal }}: <a href="videos.html">{% trans "List of all Videos" %}</a></p>
+    <h4>{% trans "Subjects" %}</h4>
+    {% regroup tutorials|dictsort:"subject" by subject as subject_list %}
+    {% for subject in subject_list %}
+        <p>{{ forloop.counter|ordinal }}:
+            <a href="#subject-{{ subject.grouper|slugify }}" title="{% trans "Jump to subject" %} '{% trans subject.grouper %}'">{% trans subject.grouper %}</a>
+        </p>
+    {% endfor %}
+</div>
+<div id="items">
+{% regroup tutorials|dictsort:"subject" by subject as subject_list %}
+{% for subject in subject_list %}
+    <h3 id="subject-{{ subject.grouper|slugify }}">{% trans "Subject" %}: {% trans subject.grouper %}</h3>
+    {% regroup subject.list|dictsort:"topic" by topic as topic_list %}
+    {% for topic in topic_list %}
+        <h4 id="topic-{{ topic.grouper|slugify }}">{% trans "Topic" %}: {% trans topic.grouper %}</h4>
+        {% regroup topic.list|dictsort:"sub_topic" by sub_topic as sub_topic_list %}
+        {% for sub_topic in sub_topic_list %}
+            {% if sub_topic.grouper %}
+            <h5 id="sub_topic-{{ sub_topic.grouper|slugify }}">
+                {% trans "Subtopic" %}: <a href="{{ sub_topic.list.0.path }}{{ sub_topic.list.0.page }}/index.html" title="{% trans "Subtopic Report" %} '{% trans sub_topic.grouper %}'">{% trans sub_topic.grouper %}</a>
+            </h5>
+            {% endif %}
+            <p id="{{ tutorial.tutorial|slugify }}" class="tutorials">
+                {% trans "Tutorials" %}:
+                {% for tutorial in sub_topic.list %}
+                    <a href="{{ tutorial.path }}{{ tutorial.page }}/index.html#{{ tutorial.tutorial|slugify }}" title="{% trans "Tutorial Report" %} '{% trans tutorial.tutorial %}'">{% trans tutorial.tutorial %}</a>{% if not forloop.last%}, {% endif %}
+                {% endfor %}
+            </p>
+        {% endfor %}
+    {% endfor %}
+{% endfor %}
+</div>
+{% endblock %}

@@ -1,0 +1,116 @@
+{% load i18n %}
+
+<!DOCTYPE HTML>
+<html lang="sr" prefix="og: http://ogp.me/ns#" xmlns:fb="https://www.facebook.com/2008/fbml" itemscope itemtype="http://schema.org/">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+    <meta name="description" content="{% trans "Our mission is a free world-class education for anyone anywhere." %} {% trans "Join us! Let's translate to Serbian together!" %}">
+    <meta name="keywords" content="khan academy, obrazovanje, education, free, video, snimak, klip, open, slobodno, besplatno, serbian, srbija, srpski, lectures, practice, exercises, skills, translate, prevođenje, lokalizacija, localization, amara, universal subtitles, subtitles, progress, report">
+    <meta name="contact" content="info@khanacademy.rs">
+    <meta name="author" content="Igor Popov">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="non_profit">
+    <meta property="og:locale" content="sr_RS">
+    <meta property="og:site_name" content="{% trans "Khan Academy Serbian" %}">
+    <meta property="og:title" content="{% if subtitle %}{{ subtitle }} | {% endif %}{% trans "Khan Academy Serbian" %}">
+    <meta property="og:description" content="{% trans "Our mission is a free world-class education for anyone anywhere. Join us! Let's translate to Serbian together!" %}">
+    <meta property="og:url" content="http://khanacademy.rs">
+    <meta property="og:image" content="http://khanacademy.rs/khan-international-logo.png">
+    <meta property="og:country-name" content="Serbia">
+    <meta property="og:email" content="info@khanacademy.rs"/>
+    <meta property="fb:admins" content="715360364" />
+    <meta itemprop="name" content="{% if subtitle %}{{ subtitle }} | {% endif %}{% trans "Khan Academy Serbian" %}">
+    <meta itemprop="description" content="{% trans "Translating Khan Academy education content to Serbian language." %}">
+    <meta itemprop="image" content="http://khanacademy.rs/khan-international-logo.png">
+    <title>{% if subtitle %}{{ subtitle }} | {% endif %}{% trans "Khan Academy Serbian" %}</title>
+    <link rel="stylesheet" type="text/css" href="{{ root }}styles.css">
+    <link rel="shortcut icon" href="{{ root }}favicon.ico">
+    <link rel="publisher" href="https://plus.google.com/112488077112060872787">
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-37040922-1']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+    {% block head %}{% endblock %}
+</head>
+<body>
+<div id="fb-root"></div>
+<div id="header">
+    <div id="logo">
+        <a href="{{ root }}index.html" title="{% trans "Return to home page" %}"><img src="{{ root }}khan-international-logo.png" alt="{% trans "Khan Academy Serbian" %}" width="200" height="200"></a>
+    </div>
+    <div id="title">
+        <h1><a href="{{ root }}index.html" title="{% trans "Return to home page" %}">{% trans "Khan Academy Serbian" %}</a></h1>
+        <div id="subtitle">
+            {% block details %}{% endblock %}
+        </div>
+        <div id="like">
+            <div class="fb-like" data-href="https://www.facebook.com/khan.academy.serbian" data-send="false" data-width="450" data-show-faces="false" data-font="arial"></div>
+            <div class="g-plusone" data-annotation="inline" data-width="300" data-href="https://plus.google.com/112488077112060872787"></div>
+        </div>
+    </div>
+    <div id="social">
+        <a id="social-tw" class="social" target="_blank" href="https://twitter.com/KhanAcademySR" title="{% trans "Khan Academy Serbian" %} | {% trans "Twitter" %}">{% trans "Twitter" %}</a>
+        <a id="social-gp" class="social" target="_blank" href="https://plus.google.com/112488077112060872787" title="{% trans "Khan Academy Serbian" %} | {% trans "Google+" %}">{% trans "Google+" %}</a>
+        <a id="social-fb" class="social" target="_blank" href="https://www.facebook.com/khan.academy.serbian" title="{% trans "Khan Academy Serbian" %} | {% trans "Facebook" %}">{% trans "Facebook" %}</a>
+        <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+</div>
+<div id="content">
+    {% block content %}{% endblock %}
+    <div class="clear"></div>
+</div>
+<div id="footer">
+    <hr>
+    <div id="khanlogo">
+    <a target="_blank" href="https://www.khanacademy.org" title="{% trans "Khan Academy" %}">
+        <img src="{{ root }}khan-logo.png" alt="{% trans "Khan Academy" %}">
+    </a><br>
+    <em>{% trans "Report generated at" %} {% now "j.n.Y, G:i" %}h.</em>
+    </div>
+    <div id="contact">
+    {% trans "Contact us" %}:
+    <a target="_blank" href="mailto:info@khanacademy.rs" title="{% trans "Khan Academy" %} - {% trans "Contact" %}">
+        <img src="{{ root }}gmail.png" alt="{% trans "E-mail" %}" width="16" height="16">
+    </a><br>
+    {% trans "Subscribe for mailing list" %}:
+    <a target="_blank" href="mailto:serbian-translators+subscribe@khanacademy.org?subject=Prijava%20na%20mailing%20listu%20praznim%20mailom" title="{% trans "Khan Academy" %} - {% trans "Мailing list" %}">
+        <img src="{{ root }}gmail.png" alt="{% trans "E-mail" %}" width="16" height="16">
+    </a><br>
+    {% trans "Visit Facebook page" %}:
+    <a target="_blank" href="https://www.facebook.com/khan.academy.serbian" title="{% trans "Khan Academy" %} - {% trans "Facebook" %}">
+        <img src="{{ root }}facebook.png" alt="{% trans "Facebook" %}" width="16" height="16">
+    </a><br>
+    {% trans "Visit Google+ page" %}:
+    <a target="_blank" href="https://plus.google.com/112488077112060872787" title="{% trans "Khan Academy" %} - {% trans "Google+" %}">
+        <img src="{{ root }}google.png" alt="{% trans "Google+" %}" width="16" height="16">
+    </a><br>
+    {% trans "Start translating" %}:
+    <a target="_blank" href="http://khan-report.appspot.com/translations/subtitlestatus?language=Serbian&amp;playlist=all&amp;display=1" title="{% trans "Khan Academy" %} - {% trans "Translating" %}">
+        <img src="{{ root }}leaf.png" alt="{% trans "Khan Academy Serbian" %}" width="16" height="16">
+    </a><br>
+    </div>
+    <div class="clear"></div>
+</div>
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=498655580174875";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+</body>
+</html>
