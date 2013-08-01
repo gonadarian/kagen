@@ -1,0 +1,149 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: khanacademy\n"
+"Report-Msgid-Bugs-To: translation-team@khanacademy.org\n"
+"POT-Creation-Date: 2013-06-23 12:22+0000\n"
+"PO-Revision-Date: 2013-07-31 19:56+0100\n"
+"Language-Team: Serbian (Cyrillic)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"Last-Translator: Igor Popov <gonadarian@gmail.com>\n"
+"Language: sr\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+msgid "English"
+msgstr "srpski"
+
+msgid "Content"
+msgstr "Sadržaj"
+
+msgid "Videos"
+msgstr "Snimci"
+
+msgid "Video"
+msgstr "Snimak"
+
+msgid "List of all Videos"
+msgstr "Spisak svih snimaka"
+
+msgid "Subjects"
+msgstr "Predmeti"
+
+msgid "Subject"
+msgstr "Predmet"
+
+msgid "Topic"
+msgstr "Oblast"
+
+msgid "Tutorial"
+msgstr "Vodič"
+
+msgid "Tutorials"
+msgstr "Vodiči"
+
+msgid "Subtopic"
+msgstr "Tema"
+
+msgid "Khan Academy Serbian"
+msgstr "Khan Akademija na srpskom"
+
+msgid "Khan Academy"
+msgstr "Khan Akademija"
+
+msgid "Our mission is a free world-class education for anyone anywhere."
+msgstr ""
+"Naša misija je pružanje slobodnog obrazovanja najvišeg nivoa svima, svugde."
+
+msgid "Join us! Let's translate to Serbian together!"
+msgstr "Pridružite nam se! Prevodite zajedno sa nama na srpski jezik!"
+
+msgid "Translating Khan Academy education content to Serbian language."
+msgstr "Prevođenje obrazovnih materijala Khan Akademije na srpski jezik."
+
+msgid "Meet Khan Academy"
+msgstr "Upoznajte Khan Akademiju"
+
+msgid "Translation Progress Report"
+msgstr "Izveštaj o prevođenju"
+
+msgid "Coach Resources"
+msgstr "Resursi za trenere"
+
+msgid "Humanities"
+msgstr "Društvene nauke"
+
+msgid "Math"
+msgstr "Matematika"
+
+msgid "Science & Economics"
+msgstr "Nauka i ekonomija"
+
+msgid "Talks and Interviews"
+msgstr "Razgovori i intervjui"
+
+msgid "Test Prep"
+msgstr "Pripreme za testove"
+
+msgid "Return to home page"
+msgstr "Povratak na početnu stranicu"
+
+msgid "Algebra"
+msgstr "Algebra"
+
+msgid "Ellipses"
+msgstr "Elipse"
+
+msgid "Functions"
+msgstr "Funckije"
+
+msgid "Contact us"
+msgstr "Kontaktirajte nas"
+
+msgid "Subscribe for mailing list"
+msgstr "Prijavite se na mejling listu"
+
+msgid "Visit Facebook page"
+msgstr "Posetite Facebook stranicu"
+
+msgid "Visit Google+ page"
+msgstr "Posetite Google+ stranicu"
+
+msgid "Start translating"
+msgstr "Počnite sa prevođenjem"
+
+msgid "Report generated at"
+msgstr "Izveštaj generisan u"
+
+msgid "Mailing list"
+msgstr "Mejling lista"
+
+msgid "Contact"
+msgstr "Kontakt"
+
+msgid "E-mail"
+msgstr "I-mejl"
+
+msgid "Translating"
+msgstr "Prevođenje"
+
+msgid "Twitter"
+msgstr "Tviter"
+
+msgid "Google+"
+msgstr "Gugl+"
+
+msgid "Facebook"
+msgstr "Fejsbuk"
+
+msgid "Jump to subject"
+msgstr "Skoči na predmet"
+
+msgid "Subtopic Report"
+msgstr "Izveštaj za oblast"
+
+msgid "Tutorial Report"
+msgstr "Izveštaj za vodič"
