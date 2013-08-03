@@ -1,8 +1,8 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: khanacademy\n"
-"Report-Msgid-Bugs-To: translation-team@khanacademy.org\n"
+"Project-Id-Version: kagen\n"
+"Report-Msgid-Bugs-To: info@khanacademy.rs\n"
 "POT-Creation-Date: 2013-06-23 12:22+0000\n"
 "PO-Revision-Date: 2013-07-31 19:56+0100\n"
 "Language-Team: Serbian (Cyrillic)\n"
@@ -19,7 +19,7 @@ msgctxt "used language"
 msgid "English"
 msgstr ""
 
-msgid "Egnlish"
+msgid "English"
 msgstr ""
 
 msgid "Serbian"
@@ -188,7 +188,4 @@ msgid "in Serbian"
 msgstr ""
 
 msgid "Translate video"
-msgstr ""
-
-msgid "Amara"
 msgstr ""
