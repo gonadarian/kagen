@@ -15,7 +15,14 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
+msgctxt "used language"
 msgid "English"
+msgstr ""
+
+msgid "Egnlish"
+msgstr ""
+
+msgid "Serbian"
 msgstr ""
 
 msgid "Content"
@@ -48,10 +55,10 @@ msgstr ""
 msgid "Subtopic"
 msgstr ""
 
-msgid "Khan Academy Serbian"
+msgid "Khan Academy"
 msgstr ""
 
-msgid "Khan Academy"
+msgid "Khan Academy Serbian"
 msgstr ""
 
 msgid "Our mission is a free world-class education for anyone anywhere."
@@ -138,6 +145,9 @@ msgstr ""
 msgid "Facebook"
 msgstr ""
 
+msgid "Amara"
+msgstr ""
+
 msgid "Jump to subject"
 msgstr ""
 
@@ -145,4 +155,40 @@ msgid "Subtopic Report"
 msgstr ""
 
 msgid "Tutorial Report"
+msgstr ""
+
+msgid "...no title"
+msgstr ""
+
+msgid "...no description"
+msgstr ""
+
+msgid "completed"
+msgstr ""
+
+msgid "Description"
+msgstr ""
+
+msgid "Revisions"
+msgstr ""
+
+msgid "...no revisions"
+msgstr ""
+
+msgid "Translator profile"
+msgstr ""
+
+msgid "Watch video"
+msgstr ""
+
+msgid "in English"
+msgstr ""
+
+msgid "in Serbian"
+msgstr ""
+
+msgid "Translate video"
+msgstr ""
+
+msgid "Amara"
 msgstr ""
