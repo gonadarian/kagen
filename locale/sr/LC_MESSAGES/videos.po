@@ -1,0 +1,490 @@
+#
+# Translators:
+# Igor Popov <gonadarian@gmail.com>, 2013
+msgid ""
+msgstr ""
+"Project-Id-Version: Kagen\n"
+"Report-Msgid-Bugs-To: info@khanacademy.rs\n"
+"POT-Creation-Date: 2013-08-08 22:05+0000\n"
+"PO-Revision-Date: 2013-08-08 22:23+0100\n"
+"Last-Translator: Igor Popov <gonadarian@gmail.com>\n"
+"Language-Team: Serbian (http://www.transifex.com/projects/p/kagen/language/"
+"sr/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: sr\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Poedit 1.5.7\n"
+
+msgid "Coach Resources"
+msgstr "Ресурси за тренере"
+
+msgid "Classroom case studies"
+msgstr ""
+
+msgid "Los Altos School District"
+msgstr "Школски округ Лос Алтос"
+
+msgid "Humanities"
+msgstr "Друштвене науке"
+
+msgid "American Civics"
+msgstr ""
+
+msgid "Art History"
+msgstr "Историја уметности"
+
+msgid "- 400 C.E. Ancient Cultures"
+msgstr ""
+
+msgid "Ancient Near East"
+msgstr ""
+
+msgid "Introduction to Art History"
+msgstr ""
+
+msgid "The Basics"
+msgstr "Основе"
+
+msgid "World History"
+msgstr "Историја света"
+
+msgid "Enlightenment and the Industrial Revolution"
+msgstr ""
+
+msgid "France's many revolutions and republics"
+msgstr ""
+
+msgid "The Recent Past"
+msgstr ""
+
+msgid "Beginning of World War I"
+msgstr ""
+
+msgid "The Cold War"
+msgstr "Хладни рат"
+
+msgid "Ancient and Medieval History"
+msgstr ""
+
+msgid "Ancient"
+msgstr ""
+
+msgid "Math"
+msgstr "Математика"
+
+msgid "Algebra"
+msgstr "Алгебра"
+
+msgid "Analytic geometry -visualizing linear relationships"
+msgstr ""
+
+msgid "More analytic geometry"
+msgstr ""
+
+msgid "Graphing linear inequalities"
+msgstr ""
+
+msgid "Conic sections"
+msgstr ""
+
+msgid "Functions"
+msgstr "Функције"
+
+msgid "Function inverses"
+msgstr "Инверзне функције"
+
+msgid "Classic function videos"
+msgstr ""
+
+msgid "Linear equations"
+msgstr "Линеарне једначине"
+
+msgid "Variables and expressions"
+msgstr "Променљиве и изрази"
+
+msgid "Equations for beginners"
+msgstr "Једначине за почетнике"
+
+msgid "Absolute value equations"
+msgstr "Једначине са апсолутном вредношћу"
+
+msgid "Old school equations with Sal"
+msgstr ""
+
+msgid "Linear inequalities"
+msgstr "Линеарне неједначине"
+
+msgid "Compound and absolute value inequalities"
+msgstr ""
+
+msgid "Matrices"
+msgstr "Матрице"
+
+msgid "Matrix multiplication"
+msgstr "Множење матрица"
+
+msgid "Inverting matrices"
+msgstr "Инверзија матрице"
+
+msgid "Polynomials"
+msgstr "Полиноми"
+
+msgid "Multiplying monomials"
+msgstr ""
+
+msgid "binomials and polynomials in general"
+msgstr ""
+
+msgid "Quadratics"
+msgstr ""
+
+msgid "Quadratic odds and ends"
+msgstr ""
+
+msgid "Systems of equations and inequalities"
+msgstr "Системи једначина и неједначина"
+
+msgid "Systems of inequalities"
+msgstr "Систем неједначина"
+
+msgid "Arithmetic and pre-algebra"
+msgstr "Аритметика и пред-алгебра"
+
+msgid "Addition and subtraction"
+msgstr "Сабирање и одузимање"
+
+msgid "Intro to addition and subtraction"
+msgstr "Увод у сабирање и одузимање"
+
+msgid "Two digit addition and subtraction"
+msgstr "Сабирање и одузимање двоцифрених бројева"
+
+msgid "Addition with carrying"
+msgstr "Сабирање са преносом"
+
+msgid "Subtraction with borrowing (regrouping)"
+msgstr "Одузимање са позајмљивањем (прегруписавање)"
+
+msgid "Addition and subtraction word problems"
+msgstr ""
+
+msgid "Arithmetic properties"
+msgstr ""
+
+msgid "Decimals"
+msgstr "Децимале"
+
+msgid "Conceptualizing decimals and place notation"
+msgstr ""
+
+msgid "Adding and subtracting decimals"
+msgstr "Сабирање и одузимање децимала"
+
+msgid "Multiplying decimals"
+msgstr "Множење децимала"
+
+msgid "Factors and multiples"
+msgstr ""
+
+msgid "Divisibility tests"
+msgstr ""
+
+msgid "Divisibility and factors"
+msgstr ""
+
+msgid "Prime numbers"
+msgstr "Прости бројеви"
+
+msgid "Prime factorization"
+msgstr ""
+
+msgid "Least common multiple"
+msgstr ""
+
+msgid "Greatest common divisor"
+msgstr ""
+
+msgid "Fractions"
+msgstr "Разломци"
+
+msgid "Adding and subtracting fractions"
+msgstr "Сабирање и одузимање разломака"
+
+msgid "Mixed numbers and improper fractions"
+msgstr ""
+
+msgid "Number sets"
+msgstr ""
+
+msgid "Multiplication and division"
+msgstr "Множење и дељење"
+
+msgid "Multiplication fun"
+msgstr ""
+
+msgid "Delightful division"
+msgstr ""
+
+msgid "Starter multiplication and division word problems"
+msgstr ""
+
+msgid "The distributive property"
+msgstr ""
+
+msgid "Order of operations"
+msgstr "Редослед операција"
+
+msgid "Place value"
+msgstr ""
+
+msgid "Multi-digit multiplication"
+msgstr "Вишецифрено множење"
+
+msgid "Loooong division!"
+msgstr "Дуууугачко дељење!"
+
+msgid "Rounding whole numbers"
+msgstr ""
+
+msgid "Lattice multiplication"
+msgstr ""
+
+msgid "Partial quotient division"
+msgstr ""
+
+msgid "Negative numbers and absolute value"
+msgstr "Негативни бројеви и апсолутна вредност"
+
+msgid "Negative number basics"
+msgstr "Основе негативних бројева"
+
+msgid "Adding and subtracting negative numbers"
+msgstr "Сабирање и одузимање негативних бројева"
+
+msgid "Multiplying and dividing negative numbers"
+msgstr "Множење и дељење негативних бројева"
+
+msgid "Absolute value"
+msgstr "Апсолутна вредност"
+
+msgid "Calculus"
+msgstr ""
+
+msgid "AP Calculus practice questions"
+msgstr ""
+
+msgid "Calculus BC sample questions"
+msgstr ""
+
+msgid "Indefinite and definite integrals"
+msgstr ""
+
+msgid "Definite integrals"
+msgstr ""
+
+msgid "Limits"
+msgstr "Лимеси"
+
+msgid "Squeeze theorem"
+msgstr ""
+
+msgid "Sequences"
+msgstr ""
+
+msgid "series and function approximation"
+msgstr ""
+
+msgid "Maclaurin and Taylor series"
+msgstr ""
+
+msgid "Geometry"
+msgstr "Геометрија"
+
+msgid "Points"
+msgstr ""
+
+msgid "lines"
+msgstr ""
+
+msgid "and planes"
+msgstr ""
+
+msgid "Introduction to Euclidean geometry"
+msgstr ""
+
+msgid "Probability and statistics"
+msgstr "Вероватноћа и статистика"
+
+msgid "Independent and dependent events"
+msgstr ""
+
+msgid "Basic probability"
+msgstr "Основе вероватноће"
+
+msgid "Random variables and probability distributions"
+msgstr ""
+
+msgid "Poisson process"
+msgstr ""
+
+msgid "Recreational mathematics"
+msgstr "Рекреативна математика"
+
+msgid "Brain teasers"
+msgstr "Мозгалице"
+
+msgid "Trigonometry and precalculus"
+msgstr ""
+
+msgid "Ellipses"
+msgstr "Елипсе"
+
+msgid "Functions and their graphs"
+msgstr ""
+
+msgid "Introduction to functions"
+msgstr "Увод у функције"
+
+msgid "Limit basics"
+msgstr ""
+
+msgid "Probability and combinatorics"
+msgstr "Вероватноћа и комбинаторика"
+
+msgid "Probability using combinatorics"
+msgstr ""
+
+msgid "Science & Economics"
+msgstr "Наука и економија"
+
+msgid "Biology"
+msgstr "Биологија"
+
+msgid "Cells and cell division"
+msgstr "Ћелице и деоба ћелија"
+
+msgid "Evolution and natural selection"
+msgstr "Еволуција и природна селекција"
+
+msgid "Tree of life"
+msgstr "Дрво живота"
+
+msgid "Computer science"
+msgstr "Рачунарске науке"
+
+msgid "Cosmology and astronomy"
+msgstr "Космологија и астрономија"
+
+msgid "Life on Earth and in the Universe"
+msgstr ""
+
+msgid "History of life on Earth"
+msgstr ""
+
+msgid "Scale of the Universe"
+msgstr ""
+
+msgid "Scale of earth"
+msgstr ""
+
+msgid "sun"
+msgstr ""
+
+msgid "galaxy and universe"
+msgstr ""
+
+msgid "Big bang and expansion of the universe"
+msgstr ""
+
+msgid "Finance and capital markets"
+msgstr ""
+
+msgid "Housing"
+msgstr ""
+
+msgid "Paulson Bailout"
+msgstr ""
+
+msgid "Inflation"
+msgstr "Инфлација"
+
+msgid "Inflation basics"
+msgstr ""
+
+msgid "Money"
+msgstr "Новац"
+
+msgid "banking and central banks"
+msgstr ""
+
+msgid "Banking and Money"
+msgstr ""
+
+msgid "2008 Bank bailout"
+msgstr ""
+
+msgid "2011-2012 Greek Debt Crisis"
+msgstr ""
+
+msgid "Stocks and bonds"
+msgstr "Акције и обвезнице"
+
+msgid "Life of a company--from birth to death"
+msgstr ""
+
+msgid "Healthcare and medicine"
+msgstr ""
+
+msgid "Endocrinology and Diabetes"
+msgstr ""
+
+msgid "Health Care System"
+msgstr ""
+
+msgid "Heart Disease and Stroke"
+msgstr ""
+
+msgid "Physics"
+msgstr "Физика"
+
+msgid "Forces and Newton's Laws of Motion"
+msgstr ""
+
+msgid "Newton's laws of motion"
+msgstr ""
+
+msgid "Gravitation"
+msgstr "Гравитација"
+
+msgid "Newton's law of gravitation"
+msgstr ""
+
+msgid "One-dimensional motion"
+msgstr "Једнодимензионално кретање"
+
+msgid "Displacement"
+msgstr ""
+
+msgid "velocity and time"
+msgstr ""
+
+msgid "Talks and Interviews"
+msgstr "Разговори и интервјуи"
+
+msgid "Other features"
+msgstr ""
+
+msgid "School pilots"
+msgstr "Школски пилоти"
+
+msgid "Test Prep"
+msgstr "Припрема тестова"
+
+msgid "California Standards Test"
+msgstr ""
+
+msgid "Algebra I"
+msgstr "Алгебра I"

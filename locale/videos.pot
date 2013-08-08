@@ -1,0 +1,481 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kagen\n"
+"Report-Msgid-Bugs-To: info@khanacademy.rs\n"
+"POT-Creation-Date: 2013-08-08 22:05+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: Igor Popov <gonadarian@gmail.com>\n"
+
+msgid "Coach Resources"
+msgstr ""
+
+msgid "Classroom case studies"
+msgstr ""
+
+msgid "Los Altos School District"
+msgstr ""
+
+msgid "Humanities"
+msgstr ""
+
+msgid "American Civics"
+msgstr ""
+
+msgid "Art History"
+msgstr ""
+
+msgid "- 400 C.E. Ancient Cultures"
+msgstr ""
+
+msgid "Ancient Near East"
+msgstr ""
+
+msgid "Introduction to Art History"
+msgstr ""
+
+msgid "The Basics"
+msgstr ""
+
+msgid "World History"
+msgstr ""
+
+msgid "Enlightenment and the Industrial Revolution"
+msgstr ""
+
+msgid "France's many revolutions and republics"
+msgstr ""
+
+msgid "The Recent Past"
+msgstr ""
+
+msgid "Beginning of World War I"
+msgstr ""
+
+msgid "The Cold War"
+msgstr ""
+
+msgid "Ancient and Medieval History"
+msgstr ""
+
+msgid "Ancient"
+msgstr ""
+
+msgid "Math"
+msgstr ""
+
+msgid "Algebra"
+msgstr ""
+
+msgid "Analytic geometry -visualizing linear relationships"
+msgstr ""
+
+msgid "More analytic geometry"
+msgstr ""
+
+msgid "Graphing linear inequalities"
+msgstr ""
+
+msgid "Conic sections"
+msgstr ""
+
+msgid "Functions"
+msgstr ""
+
+msgid "Function inverses"
+msgstr ""
+
+msgid "Classic function videos"
+msgstr ""
+
+msgid "Linear equations"
+msgstr ""
+
+msgid "Variables and expressions"
+msgstr ""
+
+msgid "Equations for beginners"
+msgstr ""
+
+msgid "Absolute value equations"
+msgstr ""
+
+msgid "Old school equations with Sal"
+msgstr ""
+
+msgid "Linear inequalities"
+msgstr ""
+
+msgid "Compound and absolute value inequalities"
+msgstr ""
+
+msgid "Matrices"
+msgstr ""
+
+msgid "Matrix multiplication"
+msgstr ""
+
+msgid "Inverting matrices"
+msgstr ""
+
+msgid "Polynomials"
+msgstr ""
+
+msgid "Multiplying monomials"
+msgstr ""
+
+msgid "binomials and polynomials in general"
+msgstr ""
+
+msgid "Quadratics"
+msgstr ""
+
+msgid "Quadratic odds and ends"
+msgstr ""
+
+msgid "Systems of equations and inequalities"
+msgstr ""
+
+msgid "Systems of inequalities"
+msgstr ""
+
+msgid "Arithmetic and pre-algebra"
+msgstr ""
+
+msgid "Addition and subtraction"
+msgstr ""
+
+msgid "Intro to addition and subtraction"
+msgstr ""
+
+msgid "Two digit addition and subtraction"
+msgstr ""
+
+msgid "Addition with carrying"
+msgstr ""
+
+msgid "Subtraction with borrowing (regrouping)"
+msgstr ""
+
+msgid "Addition and subtraction word problems"
+msgstr ""
+
+msgid "Arithmetic properties"
+msgstr ""
+
+msgid "Decimals"
+msgstr ""
+
+msgid "Conceptualizing decimals and place notation"
+msgstr ""
+
+msgid "Adding and subtracting decimals"
+msgstr ""
+
+msgid "Multiplying decimals"
+msgstr ""
+
+msgid "Factors and multiples"
+msgstr ""
+
+msgid "Divisibility tests"
+msgstr ""
+
+msgid "Divisibility and factors"
+msgstr ""
+
+msgid "Prime numbers"
+msgstr ""
+
+msgid "Prime factorization"
+msgstr ""
+
+msgid "Least common multiple"
+msgstr ""
+
+msgid "Greatest common divisor"
+msgstr ""
+
+msgid "Fractions"
+msgstr ""
+
+msgid "Adding and subtracting fractions"
+msgstr ""
+
+msgid "Mixed numbers and improper fractions"
+msgstr ""
+
+msgid "Number sets"
+msgstr ""
+
+msgid "Multiplication and division"
+msgstr ""
+
+msgid "Multiplication fun"
+msgstr ""
+
+msgid "Delightful division"
+msgstr ""
+
+msgid "Starter multiplication and division word problems"
+msgstr ""
+
+msgid "The distributive property"
+msgstr ""
+
+msgid "Order of operations"
+msgstr ""
+
+msgid "Place value"
+msgstr ""
+
+msgid "Multi-digit multiplication"
+msgstr ""
+
+msgid "Loooong division!"
+msgstr ""
+
+msgid "Rounding whole numbers"
+msgstr ""
+
+msgid "Lattice multiplication"
+msgstr ""
+
+msgid "Partial quotient division"
+msgstr ""
+
+msgid "Negative numbers and absolute value"
+msgstr ""
+
+msgid "Negative number basics"
+msgstr ""
+
+msgid "Adding and subtracting negative numbers"
+msgstr ""
+
+msgid "Multiplying and dividing negative numbers"
+msgstr ""
+
+msgid "Absolute value"
+msgstr ""
+
+msgid "Calculus"
+msgstr ""
+
+msgid "AP Calculus practice questions"
+msgstr ""
+
+msgid "Calculus BC sample questions"
+msgstr ""
+
+msgid "Indefinite and definite integrals"
+msgstr ""
+
+msgid "Definite integrals"
+msgstr ""
+
+msgid "Limits"
+msgstr ""
+
+msgid "Squeeze theorem"
+msgstr ""
+
+msgid "Sequences"
+msgstr ""
+
+msgid "series and function approximation"
+msgstr ""
+
+msgid "Maclaurin and Taylor series"
+msgstr ""
+
+msgid "Geometry"
+msgstr ""
+
+msgid "Points"
+msgstr ""
+
+msgid "lines"
+msgstr ""
+
+msgid "and planes"
+msgstr ""
+
+msgid "Introduction to Euclidean geometry"
+msgstr ""
+
+msgid "Probability and statistics"
+msgstr ""
+
+msgid "Independent and dependent events"
+msgstr ""
+
+msgid "Basic probability"
+msgstr ""
+
+msgid "Random variables and probability distributions"
+msgstr ""
+
+msgid "Poisson process"
+msgstr ""
+
+msgid "Recreational mathematics"
+msgstr ""
+
+msgid "Brain teasers"
+msgstr ""
+
+msgid "Trigonometry and precalculus"
+msgstr ""
+
+msgid "Ellipses"
+msgstr ""
+
+msgid "Functions and their graphs"
+msgstr ""
+
+msgid "Introduction to functions"
+msgstr ""
+
+msgid "Limit basics"
+msgstr ""
+
+msgid "Probability and combinatorics"
+msgstr ""
+
+msgid "Probability using combinatorics"
+msgstr ""
+
+msgid "Science & Economics"
+msgstr ""
+
+msgid "Biology"
+msgstr ""
+
+msgid "Cells and cell division"
+msgstr ""
+
+msgid "Evolution and natural selection"
+msgstr ""
+
+msgid "Tree of life"
+msgstr ""
+
+msgid "Computer science"
+msgstr ""
+
+msgid "Cosmology and astronomy"
+msgstr ""
+
+msgid "Life on Earth and in the Universe"
+msgstr ""
+
+msgid "History of life on Earth"
+msgstr ""
+
+msgid "Scale of the Universe"
+msgstr ""
+
+msgid "Scale of earth"
+msgstr ""
+
+msgid "sun"
+msgstr ""
+
+msgid "galaxy and universe"
+msgstr ""
+
+msgid "Big bang and expansion of the universe"
+msgstr ""
+
+msgid "Finance and capital markets"
+msgstr ""
+
+msgid "Housing"
+msgstr ""
+
+msgid "Paulson Bailout"
+msgstr ""
+
+msgid "Inflation"
+msgstr ""
+
+msgid "Inflation basics"
+msgstr ""
+
+msgid "Money"
+msgstr ""
+
+msgid "banking and central banks"
+msgstr ""
+
+msgid "Banking and Money"
+msgstr ""
+
+msgid "2008 Bank bailout"
+msgstr ""
+
+msgid "2011-2012 Greek Debt Crisis"
+msgstr ""
+
+msgid "Stocks and bonds"
+msgstr ""
+
+msgid "Life of a company--from birth to death"
+msgstr ""
+
+msgid "Healthcare and medicine"
+msgstr ""
+
+msgid "Endocrinology and Diabetes"
+msgstr ""
+
+msgid "Health Care System"
+msgstr ""
+
+msgid "Heart Disease and Stroke"
+msgstr ""
+
+msgid "Physics"
+msgstr ""
+
+msgid "Forces and Newton's Laws of Motion"
+msgstr ""
+
+msgid "Newton's laws of motion"
+msgstr ""
+
+msgid "Gravitation"
+msgstr ""
+
+msgid "Newton's law of gravitation"
+msgstr ""
+
+msgid "One-dimensional motion"
+msgstr ""
+
+msgid "Displacement"
+msgstr ""
+
+msgid "velocity and time"
+msgstr ""
+
+msgid "Talks and Interviews"
+msgstr ""
+
+msgid "Other features"
+msgstr ""
+
+msgid "School pilots"
+msgstr ""
+
+msgid "Test Prep"
+msgstr ""
+
+msgid "California Standards Test"
+msgstr ""
+
+msgid "Algebra I"
+msgstr ""

@@ -1,0 +1,266 @@
+#
+# Translators:
+# Igor Popov <gonadarian@gmail.com>, 2013
+msgid ""
+msgstr ""
+"Project-Id-Version: Kagen\n"
+"Report-Msgid-Bugs-To: info@khanacademy.rs\n"
+"POT-Creation-Date: 2013-06-23 12:22+0000\n"
+"PO-Revision-Date: 2013-08-08 21:47+0100\n"
+"Last-Translator: Igor Popov <gonadarian@gmail.com>\n"
+"Language-Team: Serbian (http://www.transifex.com/projects/p/kagen/language/"
+"sr/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: sr\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Poedit 1.5.7\n"
+
+#: .\kagen\templates\base.html.py:7 .\kagen\templates\base.html.py:16
+#: .\kagen\templates\index.html.py:7
+msgid "Our mission is a free world-class education for anyone anywhere."
+msgstr ""
+"Наша мисија је пружање слободног образовања највишег нивоа свима, свугде."
+
+#: .\kagen\templates\base.html.py:7 .\kagen\templates\base.html.py:16
+#: .\kagen\templates\index.html.py:7
+msgid "Join us! Let's translate to Serbian together!"
+msgstr "Придружите нам се! Преводите заједно са нама на српски језик!"
+
+#: .\kagen\templates\base.html.py:14 .\kagen\templates\base.html.py:15
+#: .\kagen\templates\base.html.py:22 .\kagen\templates\base.html.py:25
+#: .\kagen\templates\base.html.py:45 .\kagen\templates\base.html.py:48
+#: .\kagen\templates\base.html.py:58 .\kagen\templates\base.html.py:59
+#: .\kagen\templates\base.html.py:60 .\kagen\templates\base.html.py:96
+#: .\kagen\templates\playlist.html.py:5
+msgid "Khan Academy Serbian"
+msgstr "Кхан Академија на српском"
+
+#: .\kagen\templates\base.html.py:23
+msgid "Translating Khan Academy education content to Serbian language."
+msgstr "Превођење образовних материјала Кхан Академије на српски језик."
+
+#: .\kagen\templates\base.html.py:45 .\kagen\templates\base.html.py:48
+msgid "Return to home page"
+msgstr "Повратак на почетну страницу"
+
+#: .\kagen\templates\base.html.py:58
+msgid "Twitter"
+msgstr "Твитер"
+
+#: .\kagen\templates\base.html.py:59 .\kagen\templates\base.html.py:91
+#: .\kagen\templates\base.html.py:92
+msgid "Google+"
+msgstr "Гугл+"
+
+#: .\kagen\templates\base.html.py:60 .\kagen\templates\base.html.py:87
+#: .\kagen\templates\base.html.py:88
+msgid "Facebook"
+msgstr "Фејсбук"
+
+#: .\kagen\templates\base.html.py:72 .\kagen\templates\base.html.py:73
+#: .\kagen\templates\base.html.py:79 .\kagen\templates\base.html.py:83
+#: .\kagen\templates\base.html.py:87 .\kagen\templates\base.html.py:91
+#: .\kagen\templates\base.html.py:95 .\kagen\templates\playlist.html.py:22
+#: .\kagen\templates\video.html.py:26
+msgid "Khan Academy"
+msgstr "Кхан Академија"
+
+#: .\kagen\templates\base.html.py:75
+msgid "Report generated at"
+msgstr "Извештај генерисан у"
+
+#: .\kagen\templates\base.html.py:78
+msgid "Contact us"
+msgstr "Контактирајте нас"
+
+#: .\kagen\templates\base.html.py:79
+msgid "Contact"
+msgstr "Контакт"
+
+#: .\kagen\templates\base.html.py:80 .\kagen\templates\base.html.py:84
+msgid "E-mail"
+msgstr "И-мејл"
+
+#: .\kagen\templates\base.html.py:82
+msgid "Subscribe for mailing list"
+msgstr "Пријавите се на мејлинг листу"
+
+#: .\kagen\templates\base.html.py:83
+msgid "Мailing list"
+msgstr "Mејлинг листa"
+
+#: .\kagen\templates\base.html.py:86
+msgid "Visit Facebook page"
+msgstr "Посетите Фејсбук страницу"
+
+#: .\kagen\templates\base.html.py:90
+msgid "Visit Google+ page"
+msgstr "Посетите Гугл+ страницу"
+
+#: .\kagen\templates\base.html.py:94
+msgid "Start translating"
+msgstr "Почните са превођењем"
+
+#: .\kagen\templates\base.html.py:95
+msgid "Translating"
+msgstr "Превођење"
+
+#: .\kagen\templates\index.html.py:6
+msgid "Translation Progress Report"
+msgstr "Извештај о превођењу"
+
+#: .\kagen\templates\index.html.py:11
+msgid "Meet Khan Academy"
+msgstr "Упознајте Кхан Академију"
+
+#: .\kagen\templates\index.html.py:17
+msgid "Content"
+msgstr "Садржај"
+
+#: .\kagen\templates\index.html.py:18 .\kagen\templates\videos.html.py:10
+msgid "Videos"
+msgstr "Снимци"
+
+#: .\kagen\templates\index.html.py:19
+msgid "List of all Videos"
+msgstr "Списак свих снимака"
+
+#: .\kagen\templates\index.html.py:20
+msgid "Subjects"
+msgstr "Предмети"
+
+#: .\kagen\templates\index.html.py:24
+msgid "Jump to subject"
+msgstr "Скочи на предмет"
+
+#: .\kagen\templates\index.html.py:31 .\kagen\templates\playlist.html.py:8
+msgid "Subject"
+msgstr "Предмет"
+
+#: .\kagen\templates\index.html.py:34
+msgid "Topic"
+msgstr "Област"
+
+#: .\kagen\templates\index.html.py:39 .\kagen\templates\playlist.html.py:13
+msgid "Subtopic"
+msgstr "Тема"
+
+#: .\kagen\templates\index.html.py:39
+msgid "Subtopic Report"
+msgstr "Извештај за тему"
+
+#: .\kagen\templates\index.html.py:43
+msgid "Tutorials"
+msgstr "Водичи"
+
+#: .\kagen\templates\index.html.py:45
+msgid "Tutorial Report"
+msgstr "Извештај за водич"
+
+#: .\kagen\templates\playlist.html.py:9
+#, python-format
+msgid ""
+"Go back to <a href=\"%(root)sindex.html#subject-%(sub)s\">home page</a>."
+msgstr ""
+"Вратите се на <a href=\"%(root)sindex.html#subject-%(sub)s\">почетну "
+"страницу</a>."
+
+#: .\kagen\templates\playlist.html.py:15
+msgid "Tutorial"
+msgstr "Водич"
+
+#: .\kagen\templates\playlist.html.py:19 .\kagen\templates\video.html.py:18
+#: .\kagen\templates\video.html.py:24
+msgid "Video"
+msgstr "Снимак"
+
+#: .\kagen\templates\playlist.html.py:20 .\kagen\templates\playlist.html.py:21
+#, python-format
+msgid "Watch video '%(title)s'"
+msgstr "Погледајте снимак '%(title)s'"
+
+#: .\kagen\templates\playlist.html.py:20 .\kagen\templates\video.html.py:24
+msgid "...no title"
+msgstr "...без наслова"
+
+#: .\kagen\templates\playlist.html.py:24
+msgid "Translate video"
+msgstr "Преведите снимак"
+
+#: .\kagen\templates\playlist.html.py:25 .\kagen\templates\video.html.py:29
+msgid "Amara"
+msgstr "Амара"
+
+#: .\kagen\templates\playlist.html.py:29 .\kagen\templates\video.html.py:33
+msgid "Description"
+msgstr "Опис"
+
+#: .\kagen\templates\playlist.html.py:30 .\kagen\templates\videos.html.py:19
+msgid "...no description"
+msgstr "...без описа"
+
+#: .\kagen\templates\playlist.html.py:31 .\kagen\templates\video.html.py:34
+#: .\kagen\templates\videos.html.py:15
+msgid "completed"
+msgstr "завршено"
+
+#: .\kagen\templates\playlist.html.py:35
+#, python-format
+msgid "Watch video '%(title)s' in English"
+msgstr "Погледајте снимак '%(title)s' на енглеском"
+
+#: .\kagen\templates\playlist.html.py:37
+msgid "English"
+msgstr "Енглески"
+
+#: .\kagen\templates\playlist.html.py:42
+#, python-format
+msgid "Watch video '%(title)s' in Serbian"
+msgstr "Погледајте снимак '%(title)s' на српском"
+
+#: .\kagen\templates\playlist.html.py:44
+msgid "Serbian"
+msgstr "српски"
+
+#: .\kagen\templates\playlist.html.py:49
+msgid "Revisions"
+msgstr "Ревизије"
+
+#: .\kagen\templates\playlist.html.py:52
+msgid "Translator profile"
+msgstr "Профил преводиоца"
+
+#: .\kagen\templates\playlist.html.py:57
+msgid "...no revisions"
+msgstr "...без ревизија"
+
+#: .\kagen\templates\video.html.py:19
+#, python-format
+msgid ""
+"Go back to <a href=\"index.html\">current topic</a> or to <a href="
+"\"%(root)sindex.html\">home page</a>."
+msgstr ""
+"Вратите се на <a href=\"index.html\">текућу област</a> или на <a href="
+"\"%(root)sindex.html\">почетну страницу</a>."
+
+#: .\kagen\templates\video.html.py:25
+#, python-format
+msgid "Video '%(title)s' on Khan Academy"
+msgstr "Снимак '%(title)s' на Кхан Академији"
+
+#: .\kagen\templates\video.html.py:28
+#, python-format
+msgid "Translate video '%(title)s'"
+msgstr "Преведите снимак '%(title)s'"
+
+#: .\kagen\templates\videos.html.py:6
+msgid "Go back to <a href=\"index.html\">home page</a>."
+msgstr "Вратите се на <a href=\"index.html\">почетну страницу</a>."
+
+#: .\kagen\templates\videos.html.py:14
+#, python-format
+msgid "Jump to video '%(title)s'"
+msgstr "Скочите на снимак '%(title)s'"

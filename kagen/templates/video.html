@@ -1,6 +1,7 @@
 {% extends "base.html" %}
-{% load humanize %}
 {% load kagen_filters %}
+{% load humanize %}
+{% load i18n %}
 
 {% block head %}
     <link href="http://vjs.zencdn.net/c/video-js.css" rel="stylesheet">
@@ -14,23 +15,23 @@
 {% endblock %}
 
 {% block details %}
-    <h2>Snimak: {{ video.amara.title }}</h2>
-    <p><em>Vratite se na <a href="index.html">trenutnu temu</a> ili na <a href="{{ root }}index.html">početnu stranicu</a>.</em></p>
+    <h2>{% trans "Video" %}: {{ video.amara.title }}</h2>
+    <p><em>{% blocktrans %}Go back to <a href="index.html">current topic</a> or to <a href="{{ root }}index.html">home page</a>.{% endblocktrans %}</em></p>
 {% endblock %}
 
 {% block content %}
 <h3>
-    Snimak: {{ video.amara.title|default:"...bez naslova" }}
-    <a target="_blank" href="{{ video.ka.ka_url }}" title="Snimak '{{ video.amara.title }}' na Khan Akademiji">
-        <img class="leaf" src="{{ root }}leaf.png" alt="Khan Akademija">
+    {% trans "Video" %}: {{ video.amara.title|default:_("...no title") }}
+    <a target="_blank" href="{{ video.ka.ka_url }}" title="{% blocktrans with title=video.amara.title %}Video '{{ title }}' on Khan Academy{% endblocktrans %}">
+        <img class="leaf" src="{{ root }}leaf.png" alt="{% trans "Khan Academy" %}">
     </a>
-    <a target="_blank" href="http://www.amara.org/en/videos/{{ video.amid }}/sr/{{ video.amara.id }}" title="Prevođenje snimka '{{ video.amara.title }}'">
-        <img class="amara" src="{{ root }}amara.png" alt="Amara">
+    <a target="_blank" href="http://www.amara.org/en/videos/{{ video.amid }}/sr/{{ video.amara.id }}" title="{% blocktrans with title=video.amara.title %}Translate video '{{ title }}'{% endblocktrans %}">
+        <img class="amara" src="{{ root }}amara.png" alt="{% trans "Amara" %}">
     </a>
 </h3>
 <p>
-    <strong>Opis</strong>: <em>{{ video.amara.description }}</em>
-    <meter min="0" max="100" high="95" low="50" optimum="100" value="{{ video.amara.percent_done }}">({{ video.amara.percent_done }}% završeno)</meter>
+    <strong>{% trans "Description" %}</strong>: <em>{{ video.amara.description }}</em>
+    <meter min="0" max="100" high="95" low="50" optimum="100" value="{{ video.amara.percent_done }}">({{ video.amara.percent_done }}% {% trans "completed" %})</meter>
 </p>
 <div>
     {% if not sr %}
