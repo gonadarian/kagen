@@ -294,13 +294,7 @@ msgstr ""
 msgid "Geometry"
 msgstr ""
 
-msgid "Points"
-msgstr ""
-
-msgid "lines"
-msgstr ""
-
-msgid "and planes"
+msgid "Points, lines and planes"
 msgstr ""
 
 msgid "Introduction to Euclidean geometry"
@@ -378,13 +372,7 @@ msgstr ""
 msgid "Scale of the Universe"
 msgstr ""
 
-msgid "Scale of earth"
-msgstr ""
-
-msgid "sun"
-msgstr ""
-
-msgid "galaxy and universe"
+msgid "Scale of earth, sun, galaxy and universe"
 msgstr ""
 
 msgid "Big bang and expansion of the universe"
@@ -405,10 +393,7 @@ msgstr ""
 msgid "Inflation basics"
 msgstr ""
 
-msgid "Money"
-msgstr ""
-
-msgid "banking and central banks"
+msgid "Money, banking and central banks"
 msgstr ""
 
 msgid "Banking and Money"
@@ -456,10 +441,7 @@ msgstr ""
 msgid "One-dimensional motion"
 msgstr ""
 
-msgid "Displacement"
-msgstr ""
-
-msgid "velocity and time"
+msgid "Displacement, velocity and time"
 msgstr ""
 
 msgid "Talks and Interviews"
