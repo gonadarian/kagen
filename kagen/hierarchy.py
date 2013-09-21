@@ -47,7 +47,7 @@ def handle(playlists, playlist, subject, topic, sub_topic, tutorial):
     pl["ytids"] = [video["youtube_id"] for video in playlist["videos"]]
 
     playlists.append(pl)
-    logger.info("{} - {} - {} - {}".format(subject, topic, sub_topic, tutorial))
+    logger.debug("{} - {} - {} - {}".format(subject, topic, sub_topic, tutorial))
 
 
 @utils.entry_point

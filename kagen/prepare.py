@@ -6,8 +6,6 @@ from kagen.utils import config
 
 
 logger = utils.get_logger("prepare")
-dir_videos = config["paths"]["dir_videos"]
-dir_data = config["paths"]["dir_data"]
 
 
 def work():

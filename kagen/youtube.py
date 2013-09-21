@@ -8,7 +8,6 @@ from datetime import datetime
 
 
 logger = utils.get_logger("youtube")
-dir_videos = config["paths"]["dir_videos"]
 
 
 def work():

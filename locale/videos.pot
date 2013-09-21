@@ -1,13 +1,13 @@
-#
+# 
 msgid ""
 msgstr ""
-"Project-Id-Version: kagen\n"
+"Project-Id-Version: Kagen\n"
 "Report-Msgid-Bugs-To: info@khanacademy.rs\n"
 "POT-Creation-Date: 2013-08-08 22:05+0000\n"
+"Last-Translator: Igor Popov <gonadarian@gmail.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Last-Translator: Igor Popov <gonadarian@gmail.com>\n"
 
 msgid "Coach resources"
 msgstr ""
@@ -387,11 +387,7 @@ msgstr ""
 msgid "Geometry"
 msgstr ""
 
-<<<<<<< HEAD
-msgid "Points, lines and planes"
-=======
 msgid "Points, lines, and planes"
->>>>>>> Transifex integration. Progress supported again.
 msgstr ""
 
 msgid "Introduction to Euclidean geometry"
@@ -475,42 +471,6 @@ msgstr ""
 msgid "Big bang and expansion of the universe"
 msgstr ""
 
-<<<<<<< HEAD
-msgid "Finance and capital markets"
-msgstr ""
-
-msgid "Housing"
-msgstr ""
-
-msgid "Paulson Bailout"
-msgstr ""
-
-msgid "Inflation"
-msgstr ""
-
-msgid "Inflation basics"
-msgstr ""
-
-msgid "Money, banking and central banks"
-msgstr ""
-
-msgid "Banking and Money"
-msgstr ""
-
-msgid "2008 Bank bailout"
-msgstr ""
-
-msgid "2011-2012 Greek Debt Crisis"
-msgstr ""
-
-msgid "Stocks and bonds"
-msgstr ""
-
-msgid "Life of a company--from birth to death"
-msgstr ""
-
-=======
->>>>>>> Transifex integration. Progress supported again.
 msgid "Healthcare and medicine"
 msgstr ""
 
@@ -544,11 +504,7 @@ msgstr ""
 msgid "Displacement, velocity and time"
 msgstr ""
 
-<<<<<<< HEAD
-msgid "Talks and Interviews"
-=======
 msgid "Talks and interviews"
->>>>>>> Transifex integration. Progress supported again.
 msgstr ""
 
 msgid "Other features"

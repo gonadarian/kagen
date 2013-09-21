@@ -2,6 +2,7 @@
 auth.ini
 manage.py
 kagen/settings.py
+output
 
 # C extensions
 *.so

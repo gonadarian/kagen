@@ -12,6 +12,7 @@ from django.utils import translation
 from django.utils.text import slugify
 from django.utils.datastructures import SortedDict
 from django.template import Context, Template, loader
+from django.utils.translation import ugettext as _
 
 
 logger = utils.get_logger("templates")
@@ -19,7 +20,6 @@ whitespace = re.compile('^\s*\n', re.MULTILINE)
 dir_data = config["paths"]["dir_data"]
 dir_pages = config["paths"]["dir_pages"]
 dir_resources = config["paths"]["dir_resources"]
-gettext.install("django")
 
 
 def work():
@@ -192,7 +192,7 @@ def prep_video(tutorial, video):
         return None
     subtitle = _(language["title"])
     level = tutorial["level"]
-    data = {"video": video, "root": "../" * (level + 1)}
+    data = {"video": video, "subtitle": subtitle, "root": "../" * (level + 1)}
 
     return data
 
