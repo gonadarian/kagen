@@ -1,5 +1,7 @@
 *.py[cod]
 auth.ini
+manage.py
+kagen/settings.py
 
 # C extensions
 *.so
