@@ -6,7 +6,7 @@ msgstr ""
 "Project-Id-Version: Kagen\n"
 "Report-Msgid-Bugs-To: info@khanacademy.rs\n"
 "POT-Creation-Date: 2013-08-08 22:05+0000\n"
-"PO-Revision-Date: 2013-09-18 19:01+0000\n"
+"PO-Revision-Date: 2013-09-21 15:50+0000\n"
 "Last-Translator: Igor Popov <gonadarian@gmail.com>\n"
 "Language-Team: German (http://www.transifex.com/projects/p/kagen/language/de/)\n"
 "MIME-Version: 1.0\n"
@@ -186,8 +186,8 @@ msgstr "Polynome"
 msgid "Multiplying monomials, binomials and polynomials in general"
 msgstr ""
 
-msgid "Quadratics"
-msgstr "Quadratische Gleichungen"
+msgid "Quadratics functions and equations"
+msgstr ""
 
 msgid "Quadratic odds and ends"
 msgstr "Kleinigkeiten zu quadratischen Gleichungen"
@@ -250,6 +250,15 @@ msgid "Dividing decimals"
 msgstr ""
 
 msgid "Converting between fractions and decimals"
+msgstr ""
+
+msgid "Equivalent fractions and simplified form"
+msgstr ""
+
+msgid "Dividing fractions"
+msgstr ""
+
+msgid "Comparing fractions"
 msgstr ""
 
 msgid "Intro to percentages"
@@ -477,8 +486,8 @@ msgstr ""
 msgid "Big bang and expansion of the universe"
 msgstr "Der Urknall und die Ausdehnung des Universums"
 
-msgid "Healthcare and medicine"
-msgstr "Gesundheitswesen und Medizin"
+msgid "Healthcare and Medicine"
+msgstr ""
 
 msgid "Endocrinology and Diabetes"
 msgstr "Endokrinologie und Diabetes"

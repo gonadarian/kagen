@@ -6,7 +6,7 @@ msgstr ""
 "Project-Id-Version: Kagen\n"
 "Report-Msgid-Bugs-To: info@khanacademy.rs\n"
 "POT-Creation-Date: 2013-08-08 22:05+0000\n"
-"PO-Revision-Date: 2013-09-21 13:41+0000\n"
+"PO-Revision-Date: 2013-09-21 15:51+0000\n"
 "Last-Translator: Igor Popov <gonadarian@gmail.com>\n"
 "Language-Team: Serbian (http://www.transifex.com/projects/p/kagen/language/sr/)\n"
 "MIME-Version: 1.0\n"
@@ -186,8 +186,8 @@ msgstr "Полиноми"
 msgid "Multiplying monomials, binomials and polynomials in general"
 msgstr "Опште множење монома, бинома и полинома"
 
-msgid "Quadratics"
-msgstr ""
+msgid "Quadratics functions and equations"
+msgstr "Квадратне функције и једначине"
 
 msgid "Quadratic odds and ends"
 msgstr ""
@@ -251,6 +251,15 @@ msgstr "Дељење децималних бројева"
 
 msgid "Converting between fractions and decimals"
 msgstr "Претварање између разломака и децималних бројева"
+
+msgid "Equivalent fractions and simplified form"
+msgstr ""
+
+msgid "Dividing fractions"
+msgstr "Дељење разломака"
+
+msgid "Comparing fractions"
+msgstr "Поређење разломака"
 
 msgid "Intro to percentages"
 msgstr "Увод у проценте"
@@ -477,7 +486,7 @@ msgstr "Размера Земље, Сунца, галаксије и свеми�
 msgid "Big bang and expansion of the universe"
 msgstr "Велики прасак и ширење свемира"
 
-msgid "Healthcare and medicine"
+msgid "Healthcare and Medicine"
 msgstr "Здравство и медицина"
 
 msgid "Endocrinology and Diabetes"

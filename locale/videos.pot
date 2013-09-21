@@ -180,7 +180,7 @@ msgstr ""
 msgid "Multiplying monomials, binomials and polynomials in general"
 msgstr ""
 
-msgid "Quadratics"
+msgid "Quadratics functions and equations"
 msgstr ""
 
 msgid "Quadratic odds and ends"
@@ -244,6 +244,15 @@ msgid "Dividing decimals"
 msgstr ""
 
 msgid "Converting between fractions and decimals"
+msgstr ""
+
+msgid "Equivalent fractions and simplified form"
+msgstr ""
+
+msgid "Dividing fractions"
+msgstr ""
+
+msgid "Comparing fractions"
 msgstr ""
 
 msgid "Intro to percentages"
@@ -471,7 +480,7 @@ msgstr ""
 msgid "Big bang and expansion of the universe"
 msgstr ""
 
-msgid "Healthcare and medicine"
+msgid "Healthcare and Medicine"
 msgstr ""
 
 msgid "Endocrinology and Diabetes"
