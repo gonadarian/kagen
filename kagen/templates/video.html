@@ -31,7 +31,7 @@
 </h3>
 <p>
     <strong>{% trans "Description" %}</strong>: <em>{{ video.amara.description }}</em>
-    <meter min="0" max="100" high="95" low="50" optimum="100" value="{{ video.amara.percent_done }}">({{ video.amara.percent_done }}% {% trans "completed" %})</meter>
+    <meter min="0" max="100" high="95" low="50" optimum="100" value="{{ video.subtitle.sub_percent }}">({{ video.subtitle.sub_percent }}% {% trans "completed" %})</meter>
 </p>
 <div>
     {% if not sr %}

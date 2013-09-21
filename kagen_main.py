@@ -1,13 +1,13 @@
 import kagen
 from kagen import utils
 
-
 logger = utils.get_logger("main")
-
 
 def work():
     logger.info("GO prepare")
     kagen.prepare.main()
+    logger.info("GO transifex")
+    kagen.transifex.main()
     logger.info("GO khan")
     kagen.khan.main()
     logger.info("GO spreadsheet")

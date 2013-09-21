@@ -1,4 +1,4 @@
-#
+# 
 # Translators:
 # Igor Popov <gonadarian@gmail.com>, 2013
 msgid ""
@@ -6,23 +6,19 @@ msgstr ""
 "Project-Id-Version: Kagen\n"
 "Report-Msgid-Bugs-To: info@khanacademy.rs\n"
 "POT-Creation-Date: 2013-06-23 12:22+0000\n"
-"PO-Revision-Date: 2013-08-08 21:47+0100\n"
+"PO-Revision-Date: 2013-09-21 09:44+0000\n"
 "Last-Translator: Igor Popov <gonadarian@gmail.com>\n"
-"Language-Team: Serbian (http://www.transifex.com/projects/p/kagen/language/"
-"sr/)\n"
+"Language-Team: Serbian (http://www.transifex.com/projects/p/kagen/language/sr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: sr\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Poedit 1.5.7\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #: .\kagen\templates\base.html.py:7 .\kagen\templates\base.html.py:16
 #: .\kagen\templates\index.html.py:7
 msgid "Our mission is a free world-class education for anyone anywhere."
-msgstr ""
-"Наша мисија је пружање слободног образовања највишег нивоа свима, свугде."
+msgstr "Наша мисија је пружање слободног образовања највишег нивоа свима, свугде."
 
 #: .\kagen\templates\base.html.py:7 .\kagen\templates\base.html.py:16
 #: .\kagen\templates\index.html.py:7
@@ -162,11 +158,8 @@ msgstr "Извештај за водич"
 
 #: .\kagen\templates\playlist.html.py:9
 #, python-format
-msgid ""
-"Go back to <a href=\"%(root)sindex.html#subject-%(sub)s\">home page</a>."
-msgstr ""
-"Вратите се на <a href=\"%(root)sindex.html#subject-%(sub)s\">почетну "
-"страницу</a>."
+msgid "Go back to <a href=\"%(root)sindex.html#subject-%(sub)s\">home page</a>."
+msgstr "Вратите се на <a href=\"%(root)sindex.html#subject-%(sub)s\">почетну страницу</a>."
 
 #: .\kagen\templates\playlist.html.py:15
 msgid "Tutorial"
@@ -214,7 +207,7 @@ msgstr "Погледајте снимак '%(title)s' на енглеском"
 
 #: .\kagen\templates\playlist.html.py:37
 msgid "English"
-msgstr "Енглески"
+msgstr "енглески"
 
 #: .\kagen\templates\playlist.html.py:42
 #, python-format
@@ -240,11 +233,9 @@ msgstr "...без ревизија"
 #: .\kagen\templates\video.html.py:19
 #, python-format
 msgid ""
-"Go back to <a href=\"index.html\">current topic</a> or to <a href="
-"\"%(root)sindex.html\">home page</a>."
-msgstr ""
-"Вратите се на <a href=\"index.html\">текућу област</a> или на <a href="
-"\"%(root)sindex.html\">почетну страницу</a>."
+"Go back to <a href=\"index.html\">current topic</a> or to <a "
+"href=\"%(root)sindex.html\">home page</a>."
+msgstr "Вратите се на <a href=\"index.html\">текућу област</a> или на <a href=\"%(root)sindex.html\">почетну страницу</a>."
 
 #: .\kagen\templates\video.html.py:25
 #, python-format
@@ -264,3 +255,8 @@ msgstr "Вратите се на <a href=\"index.html\">почетну стра�
 #, python-format
 msgid "Jump to video '%(title)s'"
 msgstr "Скочите на снимак '%(title)s'"
+
+#: .\kagen\kagen\templates.py:206
+#, python-format
+msgid "List of All Videos"
+msgstr "Списак свих снимака"

@@ -1,72 +1,44 @@
 import json
 from kagen import utils
 from kagen.utils import config
+from datetime import date, datetime
 
 
 logger = utils.get_logger("report")
-dir_videos = config["paths"]["dir_videos"]
-dir_mapping = config["paths"]["dir_mapping"]
-dir_langs = config["paths"]["dir_languages"]
-dir_subs = config["paths"]["dir_subtitles"]
-dir_reports = config["paths"]["dir_reports"]
 
 
-def work(filename):
-    path = "{}{}".format(dir_videos, filename)
-    jpls = utils.load_json(path)
-    for playlist, videos in jpls["playlists"].items():
-        logger.info("Playlist: %s", playlist)
-        report(playlist, videos)
-
-def report(playlist, videos):
-    rpls = []
-    report = {"report": {"playlist": playlist, "data": rpls}}
-
-    jlngs = utils.load_json("{}playlist-lang-{}.json".format(dir_langs, playlist))
-    jmaps = utils.load_json("{}playlist-{}.json".format(dir_mapping, playlist))
-    jsubs = utils.load_json("{}subtitle-{}.json".format(dir_subs, playlist))
-
-    jlngspl = jlngs[playlist]
-    jsubspl = jsubs[playlist]
-
-    for ytid, amid in jmaps[playlist].items():
-        jlng = jlngspl[amid]
-        if ytid not in videos:
-            continue
-        video = videos[ytid]
-        rvid = {"amara_id": amid, "youtube_id": ytid, "serial": video["serial"]}
-        rpls.append(rvid)
-
-        if "id" in jlng:
-            rvid["ka_url"] = video["ka_url"]
-            rvid["subtitle_id"] = jlng["id"]
-            rvid["title"] = jlng["title"]
-            rvid["description"] = jlng["description"]
-            rvid["subtitle_count"] = jlng["subtitle_count"]
-            rvid["percent_done"] = jlng["percent_done"]
-
-            rvidrevs = []
-            rvid["revisions"] = rvidrevs
-            for jlngver in jlng["versions"]:
-                rev = jlngver["version_no"]
-                author = jlngver["author"]
-                change = jlngver["text_change"]
-                count = jlng["subtitle_count"]
-                if count == 0:
-                    change = 0
-                elif jlngver["version_no"] == 0:
-                    change = jsubspl[amid] / count
-
-                rvidrev = {"no": rev, "author": author, "change": change*100}
-                rvidrevs.append(rvidrev)
-
-    filename = "{}playlist-report-{}.json".format(dir_reports, playlist)
-    utils.save_json(filename, report)
-    logger.info("SAVED FILE - %s", filename)
+def work(sub_topic):
+    no = 0
+    db = utils.get_conn_mongo()
+    dtf = "%Y-%m-%dT%H:%M:%SZ"
+    limit = datetime(2013, 5, 1, 0, 0)
+    print(limit)
+    tutorials = db.video_hierarchy.find({"sub_topic": sub_topic})
+    for tutorial in tutorials:
+        playlist = db.playlists_library_list.find_one({"_id": tutorial["_id"]})
+        for video in playlist["videos"]:
+            no += 1
+            title = video["title"]
+            url = video["ka_url"]
+            ytid = video["youtube_id"]
+            amid = db.video_mappings.find_one({"_id": ytid})["amid"]
+            added = datetime.strptime(video["date_added"], dtf)
+            skipped = "x" if limit < added else ""
+            print("{}\t{}\t\t{}\t\t\t{}\t{}\t\t\t{}".format(no, title, skipped, url, amid, ytid ))
 
 
 @utils.entry_point
 def main():
-    logger.info("START reports")
-    work("videos-all-structured.json")
-    logger.info("DONE reports")
+    logger.info("START report")
+##    work("Addition and subtraction")
+##    work("Multiplication and division")
+##    work("Factors and multiples")
+    work("Negative numbers and absolute value")
+##    work("Decimals")
+##    work("Fractions")
+##    work("Ratios, proportions, units and rates")
+##    work("Applying mathematical reasoning")
+##    work("Exponents, radicals, and scientific notation")
+##    work("Arithmetic properties")
+##    work("Telling time")
+    logger.info("DONE report")

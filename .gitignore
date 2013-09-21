@@ -1,4 +1,5 @@
 *.py[cod]
+auth.ini
 
 # C extensions
 *.so

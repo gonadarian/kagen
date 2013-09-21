@@ -2,6 +2,7 @@ import os
 import re
 import json
 import shutil
+import gettext
 from kagen import utils
 from kagen.utils import config
 from django import template
@@ -15,13 +16,17 @@ from django.template import Context, Template, loader
 
 logger = utils.get_logger("templates")
 whitespace = re.compile('^\s*\n', re.MULTILINE)
+dir_data = config["paths"]["dir_data"]
 dir_pages = config["paths"]["dir_pages"]
 dir_resources = config["paths"]["dir_resources"]
+gettext.install("django")
 
 
 def work():
-    translation.activate("sr")
+    lang = config["main"]["language"]
+    translation.activate(lang)
     db = utils.get_conn_mongo()
+    mappings = utils.load_json("{}{}".format(dir_data, "youtube-mappings.json"))
 
     # preparing data for tutorial htmls
 
@@ -32,7 +37,7 @@ def work():
     tutorials = []
     for slug in pages:
         page = pages[slug]
-        data = prep_page(page, db)
+        data = prep_page(page, db, mappings)
         if data and data["tutorials"]:
             tutorials.extend(data["tutorials"])
         if data:
@@ -53,7 +58,7 @@ def work():
     filename = "videos.html"
     template = loader.get_template(filename)
     videos = db.video_languages.find()
-    data = prep_videos(videos)
+    data = prep_videos(db, videos)
     save_page(template, data, dir_pages, filename)
     files.append(filename)
 
@@ -103,7 +108,7 @@ def prep_pages(hierarchy):
 
     return pages
 
-def prep_page(page, db):
+def prep_page(page, db, mappings):
     data = {}
     subject = page[0]["subject"]
     topic = page[0]["topic"]
@@ -115,17 +120,17 @@ def prep_page(page, db):
         data["level"] = 2
         data["page"] = slugify(sub_topic)
         data["path"] = "{}/{}/".format(slugify(subject), slugify(topic))
-        data["subtitle"] = "{} - {} - {}".format(sub_topic, topic, subject)
+        data["subtitle"] = "{} - {} - {}".format(_(sub_topic), _(topic), _(subject))
     elif topic:
         data["level"] = 1
         data["page"] = slugify(topic)
         data["path"] = "{}/".format(slugify(subject), )
-        data["subtitle"] = "{} - {}".format(topic, subject)
+        data["subtitle"] = "{} - {}".format(_(topic), _(subject))
     else:
         data["level"] = 0
         data["page"] = slugify(subject)
         data["path"] = ""
-        data["subtitle"] = subject
+        data["subtitle"] = _(subject)
 
     tutorials = []
     for tutorial in page:
@@ -138,6 +143,9 @@ def prep_page(page, db):
             video = {"ytid": ytid}
             # TODO should be done on mongo side...
             mapping = db.video_mappings.find_one({"_id": ytid})
+            if not mapping:
+                logger.warning("\tMissing mapping for ytid {}".format(ytid))
+                continue
             amid = mapping["amid"]
             if not amid:
                 continue
@@ -154,9 +162,13 @@ def prep_page(page, db):
             video["amara"] = language
             ka = db.video_list.find_one({"youtube_id": ytid})
             video["ka"] = ka
+            sub = db.video_subtitles.find_one({"_id": amid})
+            video["subtitle"] = sub
             # TODO prepare on mongo side...
             sheet = db.spreadsheet.find_one({"_id": ytid}, {"ytid_sr": 1})
             ytid_sr = sheet["ytid_sr"]
+            if not ytid_sr and ytid in mappings:
+                ytid_sr = mappings[ytid]
             if ytid_sr:
                 sync = db.youtube_videos.find_one({"_id": ytid_sr})
                 video["sync"] = sync
@@ -176,20 +188,22 @@ def prep_page(page, db):
 def prep_video(tutorial, video):
     language = video["amara"]
     if "versions" not in language or len(language["versions"]) == 0:
-        logger.warning("Empty...")
+        logger.warning("\tEmpty...")
         return None
-    subtitle = language["title"]
+    subtitle = _(language["title"])
     level = tutorial["level"]
     data = {"video": video, "root": "../" * (level + 1)}
 
     return data
 
-def prep_videos(videos):
+def prep_videos(db, videos):
     list = []
     for video in videos:
         if "versions" in video and len(video["versions"]) > 0:
             list.append(video)
-    subtitle = "Spisak svih snimaka"
+            sub = db.video_subtitles.find_one({"_id": video["_id"]})
+            video["subtitle"] = sub
+    subtitle = _("List of All Videos")
     data = {"videos": list, "subtitle": subtitle, "root": ""}
 
     return data
@@ -224,8 +238,7 @@ def main():
     settings.configure(
         DEBUG=True,
         USE_I18N=True,
-        LANGUAGES = (('sr', 'Serbian'), ('en', 'English')),
-        LANGUAGE_CODE='sr',
+        LANGUAGES = (('sr', 'Serbian'), ('en', 'English'), ('de', 'German')),
         TEMPLATE_DEBUG=True,
         LOCALE_PATHS=["locale"],
         INSTALLED_APPS=["kagen", "django.contrib.humanize"]

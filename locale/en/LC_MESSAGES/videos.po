@@ -1,570 +1,530 @@
-#
+# 
+# Translators:
 msgid ""
 msgstr ""
-"Project-Id-Version: kagen\n"
+"Project-Id-Version: Kagen\n"
 "Report-Msgid-Bugs-To: info@khanacademy.rs\n"
 "POT-Creation-Date: 2013-08-08 22:05+0000\n"
+"PO-Revision-Date: 2013-09-18 19:01+0000\n"
+"Last-Translator: Igor Popov <gonadarian@gmail.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Last-Translator: Igor Popov <gonadarian@gmail.com>\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 msgid "Coach resources"
-msgstr ""
+msgstr "Coach resources"
 
 msgid "Reference for coaches"
-msgstr ""
+msgstr "Reference for coaches"
 
 msgid "Classroom case studies"
-msgstr ""
+msgstr "Classroom case studies"
 
 msgid "Los Altos School District"
-msgstr ""
+msgstr "Los Altos School District"
 
 msgid "Economics and Finance"
-msgstr ""
+msgstr "Economics and Finance"
 
 msgid "Finance and capital markets"
-msgstr ""
+msgstr "Finance and capital markets"
 
 msgid "Housing"
-msgstr ""
+msgstr "Housing"
 
 msgid "Paulson Bailout"
-msgstr ""
+msgstr "Paulson Bailout"
 
 msgid "Inflation"
-msgstr ""
+msgstr "Inflation"
 
 msgid "Inflation basics"
-msgstr ""
+msgstr "Inflation basics"
 
 msgid "Money, banking and central banks"
-msgstr ""
+msgstr "Money, banking and central banks"
 
 msgid "Banking and Money"
-msgstr ""
+msgstr "Banking and Money"
 
 msgid "2008 Bank bailout"
-msgstr ""
+msgstr "2008 Bank bailout"
 
 msgid "2011-2012 Greek Debt Crisis"
-msgstr ""
+msgstr "2011-2012 Greek Debt Crisis"
 
 msgid "Stocks and bonds"
-msgstr ""
+msgstr "Stocks and bonds"
 
 msgid "Life of a company--from birth to death"
-msgstr ""
+msgstr "Life of a company--from birth to death"
 
 msgid "Humanities"
-msgstr ""
+msgstr "Humanities"
 
 msgid "American Civics"
-msgstr ""
+msgstr "American Civics"
 
 msgid "Art History"
-msgstr ""
+msgstr "Art History"
 
 msgid "- 400 C.E. Ancient Cultures"
-msgstr ""
+msgstr "- 400 C.E. Ancient Cultures"
 
 msgid "Ancient Near East"
-msgstr ""
+msgstr "Ancient Near East"
 
 msgid "Introduction to Art History"
-msgstr ""
+msgstr "Introduction to Art History"
 
 msgid "Introduction"
-msgstr ""
+msgstr "Introduction"
 
 msgid "The Basics"
-msgstr ""
+msgstr "The Basics"
 
 msgid "World History"
-msgstr ""
+msgstr "World History"
 
 msgid "1700-1900: Enlightenment and the Industrial Revolution"
-msgstr ""
+msgstr "1700-1900: Enlightenment and the Industrial Revolution"
 
 msgid "France's many revolutions and republics"
-msgstr ""
+msgstr "France's many revolutions and republics"
 
 msgid "1900 - Present: The Recent Past"
-msgstr ""
+msgstr "1900 - Present: The Recent Past"
 
 msgid "Beginning of World War I"
-msgstr ""
+msgstr "Beginning of World War I"
 
 msgid "The Cold War"
-msgstr ""
+msgstr "The Cold War"
 
 msgid "Before 1300: Ancient and Medieval History"
-msgstr ""
+msgstr "Before 1300: Ancient and Medieval History"
 
 msgid "Ancient"
-msgstr ""
+msgstr "Ancient"
 
 msgid "Math"
-msgstr ""
+msgstr "Math"
 
 msgid "Algebra"
-msgstr ""
+msgstr "Algebra"
 
 msgid "Analytic geometry -visualizing linear relationships"
-msgstr ""
+msgstr "Analytic geometry -visualizing linear relationships"
 
 msgid "More analytic geometry"
-msgstr ""
+msgstr "More analytic geometry"
 
 msgid "Graphing and analyzing linear functions"
-msgstr ""
+msgstr "Graphing and analyzing linear functions"
 
 msgid "Graphing linear inequalities"
-msgstr ""
+msgstr "Graphing linear inequalities"
 
 msgid "Conic sections"
-msgstr ""
+msgstr "Conic sections"
 
 msgid "Functions"
-msgstr ""
+msgstr "Functions"
 
 msgid "Function inverses"
-msgstr ""
+msgstr "Function inverses"
 
 msgid "Classic function videos"
-msgstr ""
+msgstr "Classic function videos"
 
 msgid "Linear equations"
-msgstr ""
+msgstr "Linear equations"
 
 msgid "Introduction to algebra"
-msgstr ""
+msgstr "Introduction to algebra"
 
 msgid "Variables and expressions"
-msgstr ""
+msgstr "Variables and expressions"
 
 msgid "Equations for beginners"
-msgstr ""
+msgstr "Equations for beginners"
 
 msgid "Absolute value equations"
-msgstr ""
+msgstr "Absolute value equations"
 
 msgid "Old school equations with Sal"
-msgstr ""
+msgstr "Old school equations with Sal"
 
 msgid "Linear inequalities"
-msgstr ""
+msgstr "Linear inequalities"
 
 msgid "Compound and absolute value inequalities"
-msgstr ""
+msgstr "Compound and absolute value inequalities"
 
 msgid "Matrices"
-msgstr ""
+msgstr "Matrices"
 
 msgid "Matrix multiplication"
-msgstr ""
+msgstr "Matrix multiplication"
 
 msgid "Inverting matrices"
-msgstr ""
+msgstr "Inverting matrices"
 
 msgid "Multiplying and factoring expressions"
-msgstr ""
+msgstr "Multiplying and factoring expressions"
 
 msgid "Factoring simple expressions"
-msgstr ""
+msgstr "Factoring simple expressions"
 
 msgid "Polynomials"
-msgstr ""
+msgstr "Polynomials"
 
 msgid "Multiplying monomials, binomials and polynomials in general"
-msgstr ""
+msgstr "Multiplying monomials, binomials and polynomials in general"
 
 msgid "Quadratics"
-msgstr ""
+msgstr "Quadratics"
 
 msgid "Quadratic odds and ends"
-msgstr ""
+msgstr "Quadratic odds and ends"
 
 msgid "Applying mathematical reasoning"
-msgstr ""
+msgstr "Applying mathematical reasoning"
 
 msgid "Arithmetic properties"
-msgstr ""
+msgstr "Arithmetic properties"
 
 msgid "Cross topic arithmetic"
-msgstr ""
+msgstr "Cross topic arithmetic"
 
 msgid "Systems of equations and inequalities"
-msgstr ""
+msgstr "Systems of equations and inequalities"
 
 msgid "Systems of inequalities"
-msgstr ""
+msgstr "Systems of inequalities"
 
 msgid "Arithmetic and pre-algebra"
-msgstr ""
+msgstr "Arithmetic and pre-algebra"
 
 msgid "Addition and subtraction"
-msgstr ""
+msgstr "Addition and subtraction"
 
 msgid "Intro to addition and subtraction"
-msgstr ""
+msgstr "Intro to addition and subtraction"
 
 msgid "Two digit addition and subtraction"
-msgstr ""
+msgstr "Two digit addition and subtraction"
 
 msgid "Addition with carrying"
-msgstr ""
+msgstr "Addition with carrying"
 
 msgid "Subtraction with borrowing (regrouping)"
-msgstr ""
+msgstr "Subtraction with borrowing (regrouping)"
 
 msgid "Addition and subtraction word problems"
-msgstr ""
+msgstr "Addition and subtraction word problems"
 
 msgid "Decimals"
-msgstr ""
+msgstr "Decimals"
 
 msgid "Conceptualizing decimals and place notation"
-msgstr ""
+msgstr "Conceptualizing decimals and place notation"
 
 msgid "Decimals on a number line"
-msgstr ""
+msgstr "Decimals on a number line"
 
 msgid "Comparing decimals"
-msgstr ""
+msgstr "Comparing decimals"
 
 msgid "Adding and subtracting decimals"
-msgstr ""
+msgstr "Adding and subtracting decimals"
 
 msgid "Multiplying decimals"
-msgstr ""
+msgstr "Multiplying decimals"
 
 msgid "Dividing decimals"
-msgstr ""
+msgstr "Dividing decimals"
 
 msgid "Converting between fractions and decimals"
-msgstr ""
+msgstr "Converting between fractions and decimals"
 
 msgid "Intro to percentages"
-msgstr ""
+msgstr "Intro to percentages"
 
 msgid "Percent word problems"
-msgstr ""
+msgstr "Percent word problems"
 
 msgid "Estimating and rounding with decimals"
-msgstr ""
+msgstr "Estimating and rounding with decimals"
 
 msgid "Significant figures"
-msgstr ""
+msgstr "Significant figures"
 
 msgid "Moving the decimal to multiply and divide by 10"
-msgstr ""
+msgstr "Moving the decimal to multiply and divide by 10"
 
 msgid "Factors and multiples"
-msgstr ""
+msgstr "Factors and multiples"
 
 msgid "Divisibility tests"
-msgstr ""
+msgstr "Divisibility tests"
 
 msgid "Divisibility and factors"
-msgstr ""
+msgstr "Divisibility and factors"
 
 msgid "Prime numbers"
-msgstr ""
+msgstr "Prime numbers"
 
 msgid "Prime factorization"
-msgstr ""
+msgstr "Prime factorization"
 
 msgid "Least common multiple"
-msgstr ""
+msgstr "Least common multiple"
 
 msgid "Greatest common divisor"
-msgstr ""
+msgstr "Greatest common divisor"
 
 msgid "Fractions"
-msgstr ""
+msgstr "Fractions"
 
 msgid "Adding and subtracting fractions"
-msgstr ""
+msgstr "Adding and subtracting fractions"
 
 msgid "Mixed numbers and improper fractions"
-msgstr ""
+msgstr "Mixed numbers and improper fractions"
 
 msgid "Understanding fractions"
-msgstr ""
+msgstr "Understanding fractions"
 
 msgid "Decimals and fractions"
-msgstr ""
+msgstr "Decimals and fractions"
 
 msgid "Number sets"
-msgstr ""
+msgstr "Number sets"
 
 msgid "Multiplication and division"
-msgstr ""
+msgstr "Multiplication and division"
 
 msgid "Basic multiplication"
-msgstr ""
+msgstr "Basic multiplication"
 
 msgid "One-digit division"
-msgstr ""
+msgstr "One-digit division"
 
 msgid "Multiplication fun"
-msgstr ""
+msgstr "Multiplication fun"
 
 msgid "Delightful division"
-msgstr ""
+msgstr "Delightful division"
 
 msgid "Starter multiplication and division word problems"
-msgstr ""
+msgstr "Starter multiplication and division word problems"
 
 msgid "The distributive property"
-msgstr ""
+msgstr "The distributive property"
 
 msgid "Order of operations"
-msgstr ""
+msgstr "Order of operations"
 
 msgid "Place value"
-msgstr ""
+msgstr "Place value"
 
 msgid "Multi-digit multiplication"
-msgstr ""
+msgstr "Multi-digit multiplication"
 
 msgid "Loooong division!"
-msgstr ""
+msgstr "Loooong division!"
 
 msgid "Rounding whole numbers"
-msgstr ""
+msgstr "Rounding whole numbers"
 
 msgid "Lattice multiplication"
-msgstr ""
+msgstr "Lattice multiplication"
 
 msgid "Partial quotient division"
-msgstr ""
+msgstr "Partial quotient division"
 
 msgid "Negative numbers and absolute value"
-msgstr ""
+msgstr "Negative numbers and absolute value"
 
 msgid "Negative number basics"
-msgstr ""
+msgstr "Negative number basics"
 
 msgid "Adding and subtracting negative numbers"
-msgstr ""
+msgstr "Adding and subtracting negative numbers"
 
 msgid "Multiplying and dividing negative numbers"
-msgstr ""
+msgstr "Multiplying and dividing negative numbers"
 
 msgid "Absolute value"
-msgstr ""
+msgstr "Absolute value"
 
 msgid "Calculus"
-msgstr ""
+msgstr "Calculus"
 
 msgid "AP Calculus practice questions"
-msgstr ""
+msgstr "AP Calculus practice questions"
 
 msgid "Calculus BC sample questions"
-msgstr ""
+msgstr "Calculus BC sample questions"
 
 msgid "Indefinite and definite integrals"
-msgstr ""
+msgstr "Indefinite and definite integrals"
 
 msgid "Definite integrals"
-msgstr ""
+msgstr "Definite integrals"
 
 msgid "Limits"
-msgstr ""
+msgstr "Limits"
 
 msgid "Squeeze theorem"
-msgstr ""
+msgstr "Squeeze theorem"
 
 msgid "Sequences, series and function approximation"
-msgstr ""
+msgstr "Sequences, series and function approximation"
 
 msgid "Maclaurin and Taylor series"
-msgstr ""
+msgstr "Maclaurin and Taylor series"
 
 msgid "Geometry"
-msgstr ""
+msgstr "Geometry"
 
-<<<<<<< HEAD
-msgid "Points, lines and planes"
-=======
 msgid "Points, lines, and planes"
->>>>>>> Transifex integration. Progress supported again.
-msgstr ""
+msgstr "Points, lines, and planes"
 
 msgid "Introduction to Euclidean geometry"
-msgstr ""
+msgstr "Introduction to Euclidean geometry"
 
 msgid "Probability and statistics"
-msgstr ""
+msgstr "Probability and statistics"
 
 msgid "Independent and dependent events"
-msgstr ""
+msgstr "Independent and dependent events"
 
 msgid "Basic probability"
-msgstr ""
+msgstr "Basic probability"
 
 msgid "Random variables and probability distributions"
-msgstr ""
+msgstr "Random variables and probability distributions"
 
 msgid "Poisson process"
-msgstr ""
+msgstr "Poisson process"
 
 msgid "Recreational math"
-msgstr ""
+msgstr "Recreational math"
 
 msgid "Brain teasers"
-msgstr ""
+msgstr "Brain teasers"
 
 msgid "Trigonometry and precalculus"
-msgstr ""
+msgstr "Trigonometry and precalculus"
 
 msgid "Ellipses"
-msgstr ""
+msgstr "Ellipses"
 
 msgid "Functions and their graphs"
-msgstr ""
+msgstr "Functions and their graphs"
 
 msgid "Introduction to functions"
-msgstr ""
+msgstr "Introduction to functions"
 
 msgid "Limit basics"
-msgstr ""
+msgstr "Limit basics"
 
 msgid "Probability and combinatorics"
-msgstr ""
+msgstr "Probability and combinatorics"
 
 msgid "Probability using combinatorics"
-msgstr ""
+msgstr "Probability using combinatorics"
 
 msgid "Science "
-msgstr ""
+msgstr "Science "
 
 msgid "Biology"
-msgstr ""
+msgstr "Biology"
 
 msgid "Cells and cell division"
-msgstr ""
+msgstr "Cells and cell division"
 
 msgid "Evolution and natural selection"
-msgstr ""
+msgstr "Evolution and natural selection"
 
 msgid "Tree of life"
-msgstr ""
+msgstr "Tree of life"
 
 msgid "Computer science"
-msgstr ""
+msgstr "Computer science"
 
 msgid "Cosmology and astronomy"
-msgstr ""
+msgstr "Cosmology and astronomy"
 
 msgid "Life on Earth and in the Universe"
-msgstr ""
+msgstr "Life on Earth and in the Universe"
 
 msgid "History of life on Earth"
-msgstr ""
+msgstr "History of life on Earth"
 
 msgid "Scale of the Universe"
-msgstr ""
+msgstr "Scale of the Universe"
 
 msgid "Scale of earth, sun, galaxy and universe"
-msgstr ""
+msgstr "Scale of earth, sun, galaxy and universe"
 
 msgid "Big bang and expansion of the universe"
-msgstr ""
+msgstr "Big bang and expansion of the universe"
 
-<<<<<<< HEAD
-msgid "Finance and capital markets"
-msgstr ""
-
-msgid "Housing"
-msgstr ""
-
-msgid "Paulson Bailout"
-msgstr ""
-
-msgid "Inflation"
-msgstr ""
-
-msgid "Inflation basics"
-msgstr ""
-
-msgid "Money, banking and central banks"
-msgstr ""
-
-msgid "Banking and Money"
-msgstr ""
-
-msgid "2008 Bank bailout"
-msgstr ""
-
-msgid "2011-2012 Greek Debt Crisis"
-msgstr ""
-
-msgid "Stocks and bonds"
-msgstr ""
-
-msgid "Life of a company--from birth to death"
-msgstr ""
-
-=======
->>>>>>> Transifex integration. Progress supported again.
 msgid "Healthcare and medicine"
-msgstr ""
+msgstr "Healthcare and medicine"
 
 msgid "Endocrinology and Diabetes"
-msgstr ""
+msgstr "Endocrinology and Diabetes"
 
 msgid "Health Care System"
-msgstr ""
+msgstr "Health Care System"
 
 msgid "Heart Disease and Stroke"
-msgstr ""
+msgstr "Heart Disease and Stroke"
 
 msgid "Physics"
-msgstr ""
+msgstr "Physics"
 
 msgid "Forces and Newton's Laws of Motion"
-msgstr ""
+msgstr "Forces and Newton's Laws of Motion"
 
 msgid "Newton's laws of motion"
-msgstr ""
+msgstr "Newton's laws of motion"
 
 msgid "Gravitation"
-msgstr ""
+msgstr "Gravitation"
 
 msgid "Newton's law of gravitation"
-msgstr ""
+msgstr "Newton's law of gravitation"
 
 msgid "One-dimensional motion"
-msgstr ""
+msgstr "One-dimensional motion"
 
 msgid "Displacement, velocity and time"
-msgstr ""
+msgstr "Displacement, velocity and time"
 
-<<<<<<< HEAD
-msgid "Talks and Interviews"
-=======
 msgid "Talks and interviews"
->>>>>>> Transifex integration. Progress supported again.
-msgstr ""
+msgstr "Talks and interviews"
 
 msgid "Other features"
-msgstr ""
+msgstr "Other features"
 
 msgid "School pilots"
-msgstr ""
+msgstr "School pilots"
 
 msgid "Test prep"
-msgstr ""
+msgstr "Test prep"
 
 msgid "California Standards Test"
-msgstr ""
+msgstr "California Standards Test"
 
 msgid "Algebra I"
-msgstr ""
+msgstr "Algebra I"
 
 msgid "Python programming"
-msgstr ""
+msgstr "Python programming"

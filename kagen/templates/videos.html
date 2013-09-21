@@ -13,7 +13,7 @@
     <h4>
         {{ forloop.revcounter|ordinal }}:
         <a target="_blank" href="{{ video.site_url }}" title="{% blocktrans with title=video.title %}Jump to video '{{ title }}'{% endblocktrans %}">{{ video.title }}</a>
-        <meter min="0" max="100" high="95" low="50" optimum="100" value="{{ video.percent_done }}">({{ video.percent_done }}% {% trans "completed" %})</meter>
+        <meter min="0" max="100" high="95" low="50" optimum="100" value="{{ video.subtitle.sub_percent }}">({{ video.subtitle.sub_percent }}% {% trans "completed" %})</meter>
     </h4>
     <p>
         <strong title="{{ video.created|date:"d.m.Y. H:i:s" }}">{{ video.created|naturaltime }}</strong>:

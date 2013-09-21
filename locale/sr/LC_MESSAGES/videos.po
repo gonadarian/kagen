@@ -1,4 +1,4 @@
-#
+# 
 # Translators:
 # Igor Popov <gonadarian@gmail.com>, 2013
 msgid ""
@@ -6,44 +6,83 @@ msgstr ""
 "Project-Id-Version: Kagen\n"
 "Report-Msgid-Bugs-To: info@khanacademy.rs\n"
 "POT-Creation-Date: 2013-08-08 22:05+0000\n"
-"PO-Revision-Date: 2013-08-08 22:23+0100\n"
+"PO-Revision-Date: 2013-09-21 12:53+0000\n"
 "Last-Translator: Igor Popov <gonadarian@gmail.com>\n"
-"Language-Team: Serbian (http://www.transifex.com/projects/p/kagen/language/"
-"sr/)\n"
+"Language-Team: Serbian (http://www.transifex.com/projects/p/kagen/language/sr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: sr\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Poedit 1.5.7\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
-msgid "Coach Resources"
+msgid "Coach resources"
 msgstr "Ресурси за тренере"
 
+msgid "Reference for coaches"
+msgstr "Референце за тренере"
+
 msgid "Classroom case studies"
-msgstr ""
+msgstr "Учионице - студије случајева"
 
 msgid "Los Altos School District"
 msgstr "Школски округ Лос Алтос"
+
+msgid "Economics and Finance"
+msgstr "Економија и финансије"
+
+msgid "Finance and capital markets"
+msgstr "Финансије и тржишта капитала"
+
+msgid "Housing"
+msgstr "Некретнине"
+
+msgid "Paulson Bailout"
+msgstr "Полсонов бејлаут"
+
+msgid "Inflation"
+msgstr "Инфлација"
+
+msgid "Inflation basics"
+msgstr "Основе инфлације"
+
+msgid "Money, banking and central banks"
+msgstr "Новац, банкарство и централне банке"
+
+msgid "Banking and Money"
+msgstr "Банкарство и новац"
+
+msgid "2008 Bank bailout"
+msgstr "Банкарски бејлаут 2008."
+
+msgid "2011-2012 Greek Debt Crisis"
+msgstr "2011-2012 Грчка дужничка криза"
+
+msgid "Stocks and bonds"
+msgstr "Акције и обвезнице"
+
+msgid "Life of a company--from birth to death"
+msgstr "Живот компаније - од рођења до смрти"
 
 msgid "Humanities"
 msgstr "Друштвене науке"
 
 msgid "American Civics"
-msgstr ""
+msgstr "Америчко грађанско васпитање"
 
 msgid "Art History"
 msgstr "Историја уметности"
 
 msgid "- 400 C.E. Ancient Cultures"
-msgstr ""
+msgstr "До 400 п.н.е. - Древне културе"
 
 msgid "Ancient Near East"
-msgstr ""
+msgstr "Древни Блиски исток"
 
 msgid "Introduction to Art History"
-msgstr ""
+msgstr "Увод у историју уметности"
+
+msgid "Introduction"
+msgstr "Увод"
 
 msgid "The Basics"
 msgstr "Основе"
@@ -51,26 +90,26 @@ msgstr "Основе"
 msgid "World History"
 msgstr "Историја света"
 
-msgid "Enlightenment and the Industrial Revolution"
-msgstr ""
+msgid "1700-1900: Enlightenment and the Industrial Revolution"
+msgstr "1700-1900: Просветљење и индустријска револуција"
 
 msgid "France's many revolutions and republics"
-msgstr ""
+msgstr "Бројне француске револуције и републике"
 
-msgid "The Recent Past"
-msgstr ""
+msgid "1900 - Present: The Recent Past"
+msgstr "1900 - данас: Недавна прошлост"
 
 msgid "Beginning of World War I"
-msgstr ""
+msgstr "Почетак Првог светског рата"
 
 msgid "The Cold War"
 msgstr "Хладни рат"
 
-msgid "Ancient and Medieval History"
-msgstr ""
+msgid "Before 1300: Ancient and Medieval History"
+msgstr "До 1300: Древна и средњевековна историја"
 
 msgid "Ancient"
-msgstr ""
+msgstr "Древно"
 
 msgid "Math"
 msgstr "Математика"
@@ -79,16 +118,19 @@ msgid "Algebra"
 msgstr "Алгебра"
 
 msgid "Analytic geometry -visualizing linear relationships"
-msgstr ""
+msgstr "Аналитичка геометрија - визуализација линеарних односа"
 
 msgid "More analytic geometry"
-msgstr ""
+msgstr "Још аналитичке геометрије"
+
+msgid "Graphing and analyzing linear functions"
+msgstr "Цртање и анализа линеарних функција"
 
 msgid "Graphing linear inequalities"
-msgstr ""
+msgstr "Исцртавање линеарних неједначина"
 
 msgid "Conic sections"
-msgstr ""
+msgstr "Конусни пресеци"
 
 msgid "Functions"
 msgstr "Функције"
@@ -97,10 +139,13 @@ msgid "Function inverses"
 msgstr "Инверзне функције"
 
 msgid "Classic function videos"
-msgstr ""
+msgstr "Класични снимци о функцијама"
 
 msgid "Linear equations"
 msgstr "Линеарне једначине"
+
+msgid "Introduction to algebra"
+msgstr "Увод у алгебру"
 
 msgid "Variables and expressions"
 msgstr "Променљиве и изрази"
@@ -112,7 +157,7 @@ msgid "Absolute value equations"
 msgstr "Једначине са апсолутном вредношћу"
 
 msgid "Old school equations with Sal"
-msgstr ""
+msgstr "Једначине старе школе са Салом"
 
 msgid "Linear inequalities"
 msgstr "Линеарне неједначине"
@@ -129,14 +174,17 @@ msgstr "Множење матрица"
 msgid "Inverting matrices"
 msgstr "Инверзија матрице"
 
+msgid "Multiplying and factoring expressions"
+msgstr "Множење и рашчлањивање израза"
+
+msgid "Factoring simple expressions"
+msgstr "Рашчлањивање једноставних израза"
+
 msgid "Polynomials"
 msgstr "Полиноми"
 
-msgid "Multiplying monomials"
-msgstr ""
-
-msgid "binomials and polynomials in general"
-msgstr ""
+msgid "Multiplying monomials, binomials and polynomials in general"
+msgstr "Опште множење монома, бинома и полинома"
 
 msgid "Quadratics"
 msgstr ""
@@ -144,14 +192,23 @@ msgstr ""
 msgid "Quadratic odds and ends"
 msgstr ""
 
+msgid "Applying mathematical reasoning"
+msgstr "Примена математичког резоновања"
+
+msgid "Arithmetic properties"
+msgstr "Аритметичка својства"
+
+msgid "Cross topic arithmetic"
+msgstr ""
+
 msgid "Systems of equations and inequalities"
 msgstr "Системи једначина и неједначина"
 
 msgid "Systems of inequalities"
-msgstr "Систем неједначина"
+msgstr "Системи неједначина"
 
 msgid "Arithmetic and pre-algebra"
-msgstr "Аритметика и пред-алгебра"
+msgstr "Аритметика и припрема за алгебру"
 
 msgid "Addition and subtraction"
 msgstr "Сабирање и одузимање"
@@ -169,43 +226,67 @@ msgid "Subtraction with borrowing (regrouping)"
 msgstr "Одузимање са позајмљивањем (прегруписавање)"
 
 msgid "Addition and subtraction word problems"
-msgstr ""
-
-msgid "Arithmetic properties"
-msgstr ""
+msgstr "Описни задаци из сабирања и одузимања"
 
 msgid "Decimals"
-msgstr "Децимале"
+msgstr "Децимални бројеви"
 
 msgid "Conceptualizing decimals and place notation"
-msgstr ""
+msgstr "Концептуализација децималних бројева и одређивање места"
+
+msgid "Decimals on a number line"
+msgstr "Децимале на бројевној правој"
+
+msgid "Comparing decimals"
+msgstr "Поређење децималних бројева"
 
 msgid "Adding and subtracting decimals"
-msgstr "Сабирање и одузимање децимала"
+msgstr "Сабирање и одузимање децималних бројева"
 
 msgid "Multiplying decimals"
-msgstr "Множење децимала"
+msgstr "Множење децималних бројева"
+
+msgid "Dividing decimals"
+msgstr "Дељење децималних бројева"
+
+msgid "Converting between fractions and decimals"
+msgstr "Претварање између разломака и децималних бројева"
+
+msgid "Intro to percentages"
+msgstr "Увод у проценте"
+
+msgid "Percent word problems"
+msgstr "Описни задаци са процентима"
+
+msgid "Estimating and rounding with decimals"
+msgstr "Процењивање и заокруживање са децималним бројевима"
+
+msgid "Significant figures"
+msgstr "Значајне цифре"
+
+msgid "Moving the decimal to multiply and divide by 10"
+msgstr "Померање децималног зареза ради множења и дељења са 10"
 
 msgid "Factors and multiples"
-msgstr ""
+msgstr "Чиниоци и садржаоци"
 
 msgid "Divisibility tests"
-msgstr ""
+msgstr "Тестови дељивости"
 
 msgid "Divisibility and factors"
-msgstr ""
+msgstr "Дељивост и чиниоци"
 
 msgid "Prime numbers"
 msgstr "Прости бројеви"
 
 msgid "Prime factorization"
-msgstr ""
+msgstr "Разлагање на просте чиниоце"
 
 msgid "Least common multiple"
-msgstr ""
+msgstr "Најмањи заједнички садржалац"
 
 msgid "Greatest common divisor"
-msgstr ""
+msgstr "Највећи заједнички делилац"
 
 msgid "Fractions"
 msgstr "Разломци"
@@ -214,7 +295,13 @@ msgid "Adding and subtracting fractions"
 msgstr "Сабирање и одузимање разломака"
 
 msgid "Mixed numbers and improper fractions"
-msgstr ""
+msgstr "Мешовити бројеви и неправи разломци"
+
+msgid "Understanding fractions"
+msgstr "Разумевање разломака"
+
+msgid "Decimals and fractions"
+msgstr "Децимални бројеви и разломци"
 
 msgid "Number sets"
 msgstr ""
@@ -222,23 +309,29 @@ msgstr ""
 msgid "Multiplication and division"
 msgstr "Множење и дељење"
 
+msgid "Basic multiplication"
+msgstr "Основе множења"
+
+msgid "One-digit division"
+msgstr "Једноцифрено дељење"
+
 msgid "Multiplication fun"
-msgstr ""
+msgstr "Забавно множење"
 
 msgid "Delightful division"
-msgstr ""
+msgstr "Слатко дељење"
 
 msgid "Starter multiplication and division word problems"
-msgstr ""
+msgstr "Почетни описни проблеми из множења и дељења"
 
 msgid "The distributive property"
-msgstr ""
+msgstr "Дистрибутивно својство"
 
 msgid "Order of operations"
 msgstr "Редослед операција"
 
 msgid "Place value"
-msgstr ""
+msgstr "Месна вредност"
 
 msgid "Multi-digit multiplication"
 msgstr "Вишецифрено множење"
@@ -247,13 +340,13 @@ msgid "Loooong division!"
 msgstr "Дуууугачко дељење!"
 
 msgid "Rounding whole numbers"
-msgstr ""
+msgstr "Заокруживање целих бројева"
 
 msgid "Lattice multiplication"
-msgstr ""
+msgstr "\"Мрежасто\" множење"
 
 msgid "Partial quotient division"
-msgstr ""
+msgstr "Дељење кроз одузимање"
 
 msgid "Negative numbers and absolute value"
 msgstr "Негативни бројеви и апсолутна вредност"
@@ -271,100 +364,91 @@ msgid "Absolute value"
 msgstr "Апсолутна вредност"
 
 msgid "Calculus"
-msgstr ""
+msgstr "Анализа"
 
 msgid "AP Calculus practice questions"
-msgstr ""
+msgstr "Питања за вежбање АП анализе"
 
 msgid "Calculus BC sample questions"
 msgstr ""
 
 msgid "Indefinite and definite integrals"
-msgstr ""
+msgstr "Одређени и неодређени интеграли"
 
 msgid "Definite integrals"
-msgstr ""
+msgstr "Одређени интеграли"
 
 msgid "Limits"
 msgstr "Лимеси"
 
 msgid "Squeeze theorem"
-msgstr ""
+msgstr "Теорема о два полицајца"
 
-msgid "Sequences"
-msgstr ""
-
-msgid "series and function approximation"
+msgid "Sequences, series and function approximation"
 msgstr ""
 
 msgid "Maclaurin and Taylor series"
-msgstr ""
+msgstr "Меклоренови и Тејлорови редови"
 
 msgid "Geometry"
 msgstr "Геометрија"
 
-msgid "Points"
-msgstr ""
-
-msgid "lines"
-msgstr ""
-
-msgid "and planes"
-msgstr ""
+msgid "Points, lines, and planes"
+msgstr "Тачке, линије и равни"
 
 msgid "Introduction to Euclidean geometry"
-msgstr ""
+msgstr "Увод у еуклидску геометрију"
 
 msgid "Probability and statistics"
 msgstr "Вероватноћа и статистика"
 
 msgid "Independent and dependent events"
-msgstr ""
+msgstr "Независни и зависни догађаји"
 
 msgid "Basic probability"
 msgstr "Основе вероватноће"
 
 msgid "Random variables and probability distributions"
-msgstr ""
+msgstr "Случајне променљиве и дистрибуција вероватноће"
 
 msgid "Poisson process"
-msgstr ""
+msgstr "Поисонов процес"
 
-msgid "Recreational mathematics"
+msgid "Recreational math"
 msgstr "Рекреативна математика"
 
 msgid "Brain teasers"
 msgstr "Мозгалице"
 
 msgid "Trigonometry and precalculus"
-msgstr ""
+msgstr "Тригонометрија и припрема за анализу"
 
 msgid "Ellipses"
 msgstr "Елипсе"
 
 msgid "Functions and their graphs"
-msgstr ""
+msgstr "Функције и њихови графикони"
 
 msgid "Introduction to functions"
 msgstr "Увод у функције"
 
 msgid "Limit basics"
-msgstr ""
+msgstr "Основе лимеса"
 
 msgid "Probability and combinatorics"
 msgstr "Вероватноћа и комбинаторика"
 
 msgid "Probability using combinatorics"
-msgstr ""
+msgstr "Вероватноћа помоћу комбинаторике"
 
-msgid "Science & Economics"
-msgstr "Наука и економија"
+msgid "Science "
+msgstr "Наука"
 
 msgid "Biology"
 msgstr "Биологија"
 
 msgid "Cells and cell division"
-msgstr "Ћелице и деоба ћелија"
+msgstr "Ћелије и деоба ћелија"
 
 msgid "Evolution and natural selection"
 msgstr "Еволуција и природна селекција"
@@ -379,112 +463,70 @@ msgid "Cosmology and astronomy"
 msgstr "Космологија и астрономија"
 
 msgid "Life on Earth and in the Universe"
-msgstr ""
+msgstr "Живот на Земљи и у свемиру"
 
 msgid "History of life on Earth"
-msgstr ""
+msgstr "Историја живота на Земљи"
 
 msgid "Scale of the Universe"
-msgstr ""
+msgstr "Размера свемира"
 
-msgid "Scale of earth"
-msgstr ""
-
-msgid "sun"
-msgstr ""
-
-msgid "galaxy and universe"
-msgstr ""
+msgid "Scale of earth, sun, galaxy and universe"
+msgstr "Размера Земље, Сунца, галаксије и свемира"
 
 msgid "Big bang and expansion of the universe"
-msgstr ""
-
-msgid "Finance and capital markets"
-msgstr ""
-
-msgid "Housing"
-msgstr ""
-
-msgid "Paulson Bailout"
-msgstr ""
-
-msgid "Inflation"
-msgstr "Инфлација"
-
-msgid "Inflation basics"
-msgstr ""
-
-msgid "Money"
-msgstr "Новац"
-
-msgid "banking and central banks"
-msgstr ""
-
-msgid "Banking and Money"
-msgstr ""
-
-msgid "2008 Bank bailout"
-msgstr ""
-
-msgid "2011-2012 Greek Debt Crisis"
-msgstr ""
-
-msgid "Stocks and bonds"
-msgstr "Акције и обвезнице"
-
-msgid "Life of a company--from birth to death"
-msgstr ""
+msgstr "Велики прасак и ширење свемира"
 
 msgid "Healthcare and medicine"
-msgstr ""
+msgstr "Здравство и медицина"
 
 msgid "Endocrinology and Diabetes"
-msgstr ""
+msgstr "Ендокринологија и дијабетес"
 
 msgid "Health Care System"
-msgstr ""
+msgstr "Здравствени систем"
 
 msgid "Heart Disease and Stroke"
-msgstr ""
+msgstr "Болести срца и шлог"
 
 msgid "Physics"
 msgstr "Физика"
 
 msgid "Forces and Newton's Laws of Motion"
-msgstr ""
+msgstr "Силе и Њутнов закон кретања"
 
 msgid "Newton's laws of motion"
-msgstr ""
+msgstr "Њутнов закон кретања"
 
 msgid "Gravitation"
 msgstr "Гравитација"
 
 msgid "Newton's law of gravitation"
-msgstr ""
+msgstr "Њутнов закон гравитације"
 
 msgid "One-dimensional motion"
 msgstr "Једнодимензионално кретање"
 
-msgid "Displacement"
+msgid "Displacement, velocity and time"
 msgstr ""
 
-msgid "velocity and time"
-msgstr ""
-
-msgid "Talks and Interviews"
+msgid "Talks and interviews"
 msgstr "Разговори и интервјуи"
 
 msgid "Other features"
-msgstr ""
+msgstr "Друга својства"
 
 msgid "School pilots"
 msgstr "Школски пилоти"
 
-msgid "Test Prep"
-msgstr "Припрема тестова"
+msgid "Test prep"
+msgstr "Припреме за тестове"
 
 msgid "California Standards Test"
-msgstr ""
+msgstr "Стандардни калифорнијски тест"
 
 msgid "Algebra I"
 msgstr "Алгебра I"
+
+msgid "Python programming"
+msgstr "Програмирање у Пајтону"

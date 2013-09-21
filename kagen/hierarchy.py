@@ -39,6 +39,7 @@ def work():
 def handle(playlists, playlist, subject, topic, sub_topic, tutorial):
     pl = {}
     pl["_id"] = playlist["id"]
+    pl["slug"] = playlist["slug"]
     pl["subject"] = subject
     pl["topic"] = topic
     pl["sub_topic"] = sub_topic

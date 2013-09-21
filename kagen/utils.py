@@ -1,6 +1,7 @@
 import os
 import sys
 import json
+import base64
 import logging
 import pymongo
 import http.client
@@ -13,8 +14,23 @@ path = os.path.dirname(os.path.realpath(__file__))
 os.chdir("{}/..".format(path))
 config = ConfigParser(interpolation = ExtendedInterpolation())
 config.read("kagen.ini")
+config.read("auth.ini")
 version = config["main"]["version"]
 
+transifex_user = config["keys"]["transifex_user"]
+transifex_pass = config["keys"]["transifex_pass"]
+transifex_auth = "{}:{}".format(transifex_user, transifex_pass)
+transifex_auth = base64.b64encode(bytes(transifex_auth, "latin-1"))
+transifex_auth = "Basic {}".format(str(transifex_auth, "latin-1"))
+headers = {
+    "www.transifex.com": {
+        "Authorization": transifex_auth
+    },
+    "www.amara.org": {
+        "X-api-username": config["keys"]["amara_user"],
+        "X-apikey":  config["keys"]["amara_key"]
+    }
+}
 
 def entry_point(fn):
     """ Main method decorator. """
@@ -82,6 +98,11 @@ def get_conn_youtube():
     conn = http.client.HTTPSConnection("www.googleapis.com")
     return conn
 
+def get_conn_transifex():
+    """ Create a HTTP connection to Transifex. """
+    conn = http.client.HTTPSConnection("www.transifex.com")
+    return conn
+
 def get_response(conn, query, decode=True):
     """ Execute API request specified by path with default authentication data
     and return unformatted content.
@@ -90,8 +111,9 @@ def get_response(conn, query, decode=True):
     conn.putrequest("GET", query)
     conn.putheader("Content-type", "application/json; charset=utf-8")
     conn.putheader("Accept", "*/*")
-    conn.putheader("X-api-username","gonadarian")
-    conn.putheader("X-apikey","761a36e4ea94a3f6c47f51dcc6077b3ee792a977")
+    if conn.host in headers:
+        for name, value in headers[conn.host].items():
+            conn.putheader(name, value)
     conn.endheaders()
 
     response  = conn.getresponse().read()

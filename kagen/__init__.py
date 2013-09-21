@@ -7,4 +7,5 @@ from kagen import subtitle
 from kagen import hierarchy
 from kagen import languages
 from kagen import templates
+from kagen import transifex
 from kagen import spreadsheet

@@ -5,12 +5,13 @@
 {% block title %}{% trans subject %} | {% trans "Khan Academy Serbian" %}{% endblock %}
 
 {% block details %}
-    <h2>{% trans "Subject" %}: {% trans subject %}</h2>
+    <h2>{% trans "Subject" %}: <a href="{{ root }}index.html#subject-{{ subject|slugify }}">{% trans subject %}</a></h2>
     <p><em>{% blocktrans with sub=subject|slugify %}Go back to <a href="{{ root }}index.html#subject-{{ sub }}">home page</a>.{% endblocktrans %}</em></p>
 {% endblock %}
 
 {% block content %}
-<h2>{% trans "Subtopic" %}: {{ sub_topic }} (<a href="{{ root }}index.html#topic-{{ topic|slugify }}">{{ topic|lower }}</a>)</h2>
+<h1>{% trans "Topic" %}: <a href="{{ root }}index.html#topic-{{ topic|slugify }}">{% trans topic %}</a></h1>
+<h2>{% trans "Subtopic" %}: {{ sub_topic }}</h2>
 {% for tutorial in tutorials %}
 <h3 id="{{ tutorial.tutorial|slugify }}">{% trans "Tutorial" %}: {% trans tutorial.tutorial %}</h3>
 {% for video in tutorial.videos %}
@@ -28,7 +29,7 @@
 <p class="description">
     <strong>{% trans "Description" %}</strong>:
     <em>{{ video.ka.description|default:_("...no description") }}</em>
-    <meter min="0" max="100" high="95" low="50" optimum="100" value="{{ video.amara.percent_done }}">({{ video.amara.percent_done }}% {% trans "completed" %})</meter>
+    <meter min="0" max="100" high="95" low="50" optimum="100" value="{{ video.subtitle.sub_percent }}">({{ video.subtitle.sub_percent }}% {% trans "completed" %})</meter>
 </p>
 <div class="details">
     <div class="snapshoot">
