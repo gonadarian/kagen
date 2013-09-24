@@ -254,3 +254,8 @@ msgstr ""
 #, python-format
 msgid "List of All Videos"
 msgstr ""
+
+#: .\kagen\templates\playlist.html.py:25 .\kagen\templates\index.html.py:24
+#, python-format
+msgid "top"
+msgstr ""

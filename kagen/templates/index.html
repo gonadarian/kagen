@@ -16,19 +16,21 @@
 <div id="list">
     <h3>{% trans "Content" %}</h3>
     <h4>{% trans "Videos" %}</h4>
-    <p>{{ 1|ordinal }}: <a href="videos.html">{% trans "List of all Videos" %}</a></p>
+    <ul>
+    <li><a href="videos.html">{% trans "List of all Videos" %}</a></li>
+    </ul>
     <h4>{% trans "Subjects" %}</h4>
+    <ul>
     {% regroup tutorials|dictsort:"subject" by subject as subject_list %}
     {% for subject in subject_list %}
-        <p>{{ forloop.counter|ordinal }}:
-            <a href="#subject-{{ subject.grouper|slugify }}" title="{% trans "Jump to subject" %} '{% trans subject.grouper %}'">{% trans subject.grouper %}</a>
-        </p>
+        <li><a href="#subject-{{ subject.grouper|slugify }}" title="{% trans "Jump to subject" %} '{% trans subject.grouper %}'">{% trans subject.grouper %}</a></li>
     {% endfor %}
+    </ul>
 </div>
 <div id="items">
 {% regroup tutorials|dictsort:"subject" by subject as subject_list %}
 {% for subject in subject_list %}
-    <h3 id="subject-{{ subject.grouper|slugify }}">{% trans "Subject" %}: {% trans subject.grouper %}</h3>
+    <h3 id="subject-{{ subject.grouper|slugify }}">{% trans "Subject" %}: {% trans subject.grouper %} (<a href="#list">{% trans "top" %}</a>)</h3>
     {% regroup subject.list|dictsort:"topic" by topic as topic_list %}
     {% for topic in topic_list %}
         <h4 id="topic-{{ topic.grouper|slugify }}">{% trans "Topic" %}: {% trans topic.grouper %}</h4>

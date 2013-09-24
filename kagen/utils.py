@@ -80,7 +80,7 @@ def get_conn():
 
 def get_conn_mongo():
     """ Create a MongoDB connection. """
-    db = pymongo.Connection("mongodb://localhost", safe=True).kagen2
+    db = pymongo.Connection("mongodb://localhost", safe=True).kagen
     return db
 
 def get_conn_google():

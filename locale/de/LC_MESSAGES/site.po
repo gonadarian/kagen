@@ -6,7 +6,7 @@ msgstr ""
 "Project-Id-Version: Kagen\n"
 "Report-Msgid-Bugs-To: info@khanacademy.rs\n"
 "POT-Creation-Date: 2013-06-23 12:22+0000\n"
-"PO-Revision-Date: 2013-09-21 09:43+0000\n"
+"PO-Revision-Date: 2013-09-24 19:09+0000\n"
 "Last-Translator: Igor Popov <gonadarian@gmail.com>\n"
 "Language-Team: German (http://www.transifex.com/projects/p/kagen/language/de/)\n"
 "MIME-Version: 1.0\n"
@@ -259,4 +259,9 @@ msgstr "Gehe zum Video '%(title)s'"
 #: .\kagen\kagen\templates.py:206
 #, python-format
 msgid "List of All Videos"
+msgstr ""
+
+#: .\kagen\templates\playlist.html.py:25 .\kagen\templates\index.html.py:24
+#, python-format
+msgid "top"
 msgstr ""

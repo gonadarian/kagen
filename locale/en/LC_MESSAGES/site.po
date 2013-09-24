@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: Kagen\n"
 "Report-Msgid-Bugs-To: info@khanacademy.rs\n"
 "POT-Creation-Date: 2013-06-23 12:22+0000\n"
-"PO-Revision-Date: 2013-09-21 09:43+0000\n"
+"PO-Revision-Date: 2013-09-24 19:09+0000\n"
 "Last-Translator: Igor Popov <gonadarian@gmail.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -258,3 +258,8 @@ msgstr "Jump to video '%(title)s'"
 #, python-format
 msgid "List of All Videos"
 msgstr "List of All Videos"
+
+#: .\kagen\templates\playlist.html.py:25 .\kagen\templates\index.html.py:24
+#, python-format
+msgid "top"
+msgstr "top"

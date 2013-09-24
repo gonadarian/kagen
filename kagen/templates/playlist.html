@@ -6,62 +6,73 @@
 
 {% block details %}
     <h2>{% trans "Subject" %}: <a href="{{ root }}index.html#subject-{{ subject|slugify }}">{% trans subject %}</a></h2>
+    <h3>{% trans "Topic" %}: <a href="{{ root }}index.html#topic-{{ topic|slugify }}">{% trans topic %}</a></h3>
     <p><em>{% blocktrans with sub=subject|slugify %}Go back to <a href="{{ root }}index.html#subject-{{ sub }}">home page</a>.{% endblocktrans %}</em></p>
 {% endblock %}
 
 {% block content %}
-<h1>{% trans "Topic" %}: <a href="{{ root }}index.html#topic-{{ topic|slugify }}">{% trans topic %}</a></h1>
-{% if sub_topic %}
-<h2>{% trans "Subtopic" %}: {% trans sub_topic %}</h2>
-{% endif %}
-{% for tutorial in tutorials %}
-<h3 id="{{ tutorial.tutorial|slugify }}">{% trans "Tutorial" %}: {% trans tutorial.tutorial %}</h3>
-{% for video in tutorial.videos %}
-{% if video.amara.id and video.amara.versions|length > 0 %}
-<h4 class="title" id="{{ video.ka.title|slugify }}">
-    {% trans "Video" %}:
-    <a href="{{ root }}{{ tutorial.path }}{{ tutorial.page }}/video-en-{{ video.ytid  }}.html" title="{% blocktrans with title=video.amara.title %}Watch video '{{ title }}'{% endblocktrans %}">{{ video.amara.title|default:_("...no title") }}</a>
-    <a target="_blank" href="{{ video.ka.ka_url }}" title="{% blocktrans with title=video.amara.title %}Watch video '{{ title }}'{% endblocktrans %}">
-        <img class="leaf" src="{{ root }}leaf.png" alt="{% trans "Khan Academy" %}">
-    </a>
-    <a target="_blank" href="http://www.amara.org/en/videos/{{ video.amid }}/sr/{{ video.amara.id }}" title="{% trans "Translate video" %} '{{ video.amara.title }}'">
-        <img class="amara" src="{{ root }}amara.png" alt="{% trans "Amara" %}">
-    </a>
-</h4>
-<p class="description">
-    <strong>{% trans "Description" %}</strong>:
-    <em>{{ video.amara.description|default:_("...no description") }}</em>
-    <meter min="0" max="100" high="95" low="50" optimum="100" value="{{ video.subtitle.sub_percent }}">({{ video.subtitle.sub_percent }}% {% trans "completed" %})</meter>
-</p>
-<div class="details">
-    <div class="snapshoot">
-        <a href="{{ root }}{{ tutorial.path }}{{ tutorial.page }}/video-en-{{ video.ytid }}.html" title="{% blocktrans with title=video.amara.title %}Watch video '{{ title }}' in English{% endblocktrans %}">
-            <img src="http://i.ytimg.com/vi/{{ video.ytid }}/3.jpg" alt="{{ video.ka.title }}">
-            <span>{% trans "English" %}</span>
-        </a>
-    </div>
-    {% if video.sync %}
-    <div class="snapshoot">
-        <a href="{{ root }}{{ tutorial.path }}{{ tutorial.page }}/video-sr-{{ video.sync.id }}.html" title="{% blocktrans with title=video.amara.title %}Watch video '{{ title }}' in Serbian{% endblocktrans %}">
-            <img src="http://i.ytimg.com/vi/{{ video.sync.id }}/3.jpg" alt="{% trans video.sync.title %}">
-            <span>{% trans "Serbian" %}</span>
-        </a>
-    </div>
-    {% endif %}
-    <div class="revisions">
-        <div><strong>{% trans "Revisions" %}</strong>:</div>
-        {% for version in video.amara.versions|dictsort:"version_no" %}
-            <span>{{ forloop.counter|ordinal }}:
-            <a target="_blank" href="http://www.amara.org/en/profiles/profile/{{ version.author }}/" title="{% trans "Translator profile" %} '{{ version.author }}'">
-                <strong>{{ version.author }}</strong>
-            </a>:
-            {{ version.text_change|floatformat:2|intcomma }}%</span><br>
-        {% empty %}
-            <span>{% trans "...no revisions" %}</span>
-        {% endfor %}
-    </div>
+<div id="list">
+    <h3>{% trans "Content" %}</h3>
+    <h4>{% trans "Tutorials" %}</h4>
+    <ul>
+    {% for tutorial in tutorials %}
+        <li><a href="#tutorial-{{ tutorial.tutorial|slugify }}" title="{% trans "Jump to tutorial" %} '{% trans tutorial.tutorial %}'">{% trans tutorial.tutorial %}</a></li>
+    {% endfor %}
+    </ul>
 </div>
-{% endif %}
-{% endfor %}
-{% endfor %}
+<div id="items">
+    {% if sub_topic %}
+    <h2>{% trans "Subtopic" %}: {% trans sub_topic %}</h2>
+    {% endif %}
+    {% for tutorial in tutorials %}
+        <h3 id="tutorial-{{ tutorial.tutorial|slugify }}">{% comment %}{% trans "Tutorial" %}: {% endcomment %}{% trans tutorial.tutorial %} (<a href="#list">{% trans "top" %}</a>)</h3>
+        {% for video in tutorial.videos %}
+            {% if video.amara.id and video.amara.versions|length > 0 %}
+            <h4 class="title" id="{{ video.ka.title|slugify }}">
+                {% comment %}{% trans "Video" %}: {% endcomment %}
+                <a href="{{ root }}{{ tutorial.path }}{{ tutorial.page }}/video-en-{{ video.ytid  }}.html" title="{% blocktrans with title=video.amara.title %}Watch video '{{ title }}'{% endblocktrans %}">{{ video.amara.title|default:_("...no title") }}</a>
+                <a target="_blank" href="{{ video.ka.ka_url }}" title="{% blocktrans with title=video.amara.title %}Watch video '{{ title }}'{% endblocktrans %}">
+                    <img class="leaf" src="{{ root }}leaf.png" alt="{% trans "Khan Academy" %}">
+                </a>
+                <a target="_blank" href="http://www.amara.org/en/videos/{{ video.amid }}/sr/{{ video.amara.id }}" title="{% trans "Translate video" %} '{{ video.amara.title }}'">
+                    <img class="amara" src="{{ root }}amara.png" alt="{% trans "Amara" %}">
+                </a>
+            </h4>
+            <p class="description">
+                {% comment %}<strong>{% trans "Description" %}</strong>: {% endcomment %}
+                <em>{{ video.amara.description|default:_("...no description") }}</em>
+                <meter min="0" max="100" high="95" low="50" optimum="100" value="{{ video.subtitle.sub_percent }}">({{ video.subtitle.sub_percent }}% {% trans "completed" %})</meter>
+            </p>
+            <div class="details">
+                <div class="snapshoot">
+                    <a href="{{ root }}{{ tutorial.path }}{{ tutorial.page }}/video-en-{{ video.ytid }}.html" title="{% blocktrans with title=video.amara.title %}Watch video '{{ title }}' in English{% endblocktrans %}">
+                        <img src="http://i.ytimg.com/vi/{{ video.ytid }}/3.jpg" alt="{{ video.ka.title }}">
+                        <span>{% trans "English" %}</span>
+                    </a>
+                </div>
+                {% if video.sync %}
+                <div class="snapshoot">
+                    <a href="{{ root }}{{ tutorial.path }}{{ tutorial.page }}/video-sr-{{ video.sync.id }}.html" title="{% blocktrans with title=video.amara.title %}Watch video '{{ title }}' in Serbian{% endblocktrans %}">
+                        <img src="http://i.ytimg.com/vi/{{ video.sync.id }}/3.jpg" alt="{% trans video.sync.title %}">
+                        <span>{% trans "Serbian" %}</span>
+                    </a>
+                </div>
+                {% endif %}
+                <div class="revisions">
+                    <div><strong>{% trans "Revisions" %}</strong>:</div>
+                    {% for version in video.amara.versions|dictsort:"version_no" %}
+                        <span>{{ forloop.counter|ordinal }}:
+                        <a target="_blank" href="http://www.amara.org/en/profiles/profile/{{ version.author }}/" title="{% trans "Translator profile" %} '{{ version.author }}'">
+                            <strong>{{ version.author }}</strong>
+                        </a>:
+                        {{ version.text_change|floatformat:2|intcomma }}%</span><br>
+                    {% empty %}
+                        <span>{% trans "...no revisions" %}</span>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endif %}
+        {% endfor %}
+    {% endfor %}
+</div>
 {% endblock %}
