@@ -6,7 +6,7 @@ msgstr ""
 "Project-Id-Version: Kagen\n"
 "Report-Msgid-Bugs-To: info@khanacademy.rs\n"
 "POT-Creation-Date: 2013-08-08 22:05+0000\n"
-"PO-Revision-Date: 2013-09-21 16:11+0000\n"
+"PO-Revision-Date: 2013-09-24 20:02+0000\n"
 "Last-Translator: Igor Popov <gonadarian@gmail.com>\n"
 "Language-Team: Serbian (http://www.transifex.com/projects/p/kagen/language/sr/)\n"
 "MIME-Version: 1.0\n"
@@ -27,7 +27,7 @@ msgstr "Учионице - студије случајева"
 msgid "Los Altos School District"
 msgstr "Школски округ Лос Алтос"
 
-msgid "Economics and Finance"
+msgid "Economics and finance"
 msgstr "Економија и финансије"
 
 msgid "Finance and capital markets"
@@ -66,10 +66,10 @@ msgstr "Живот компаније - од рођења до смрти"
 msgid "Humanities"
 msgstr "Друштвене науке"
 
-msgid "American Civics"
+msgid "American civics"
 msgstr "Америчко грађанско васпитање"
 
-msgid "Art History"
+msgid "Art history"
 msgstr "Историја уметности"
 
 msgid "- 400 C.E. Ancient Cultures"
@@ -87,7 +87,7 @@ msgstr "Увод"
 msgid "The Basics"
 msgstr "Основе"
 
-msgid "World History"
+msgid "World history"
 msgstr "Историја света"
 
 msgid "1700-1900: Enlightenment and the Industrial Revolution"
@@ -260,6 +260,12 @@ msgstr "Дељење разломака"
 
 msgid "Comparing fractions"
 msgstr "Поређење разломака"
+
+msgid "Multiplying fractions"
+msgstr "Множење разломака"
+
+msgid "Multiplying fractions word problems"
+msgstr "Описни задаци из множења разломака"
 
 msgid "Intro to percentages"
 msgstr "Увод у проценте"
@@ -486,7 +492,7 @@ msgstr "Размера Земље, Сунца, галаксије и свеми�
 msgid "Big bang and expansion of the universe"
 msgstr "Велики прасак и ширење свемира"
 
-msgid "Healthcare and Medicine"
+msgid "Healthcare and medicine"
 msgstr "Здравство и медицина"
 
 msgid "Endocrinology and Diabetes"

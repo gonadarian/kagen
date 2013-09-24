@@ -15,7 +15,8 @@ os.chdir("{}/..".format(path))
 config = ConfigParser(interpolation = ExtendedInterpolation())
 config.read("kagen.ini")
 config.read("auth.ini")
-version = config["main"]["version"]
+config.read("run.ini")
+version = config["run"]["version"]
 
 transifex_user = config["keys"]["transifex_user"]
 transifex_pass = config["keys"]["transifex_pass"]
@@ -31,6 +32,7 @@ headers = {
         "X-apikey":  config["keys"]["amara_key"]
     }
 }
+
 
 def entry_point(fn):
     """ Main method decorator. """

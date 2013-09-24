@@ -21,7 +21,7 @@ msgstr ""
 msgid "Los Altos School District"
 msgstr ""
 
-msgid "Economics and Finance"
+msgid "Economics and finance"
 msgstr ""
 
 msgid "Finance and capital markets"
@@ -60,10 +60,10 @@ msgstr ""
 msgid "Humanities"
 msgstr ""
 
-msgid "American Civics"
+msgid "American civics"
 msgstr ""
 
-msgid "Art History"
+msgid "Art history"
 msgstr ""
 
 msgid "- 400 C.E. Ancient Cultures"
@@ -81,7 +81,7 @@ msgstr ""
 msgid "The Basics"
 msgstr ""
 
-msgid "World History"
+msgid "World history"
 msgstr ""
 
 msgid "1700-1900: Enlightenment and the Industrial Revolution"
@@ -253,6 +253,12 @@ msgid "Dividing fractions"
 msgstr ""
 
 msgid "Comparing fractions"
+msgstr ""
+
+msgid "Multiplying fractions"
+msgstr ""
+
+msgid "Multiplying fractions word problems"
 msgstr ""
 
 msgid "Intro to percentages"
@@ -480,7 +486,7 @@ msgstr ""
 msgid "Big bang and expansion of the universe"
 msgstr ""
 
-msgid "Healthcare and Medicine"
+msgid "Healthcare and medicine"
 msgstr ""
 
 msgid "Endocrinology and Diabetes"

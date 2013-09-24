@@ -19,6 +19,7 @@ dtf = "%Y-%m-%dT%H:%M:%S"
 def work():
     tstart = time.time()
     lang = config["main"]["language"]
+    mode = config["run"]["mode"]
     pool_size = int(config["main"]["thread_pool_size"])
 
     db = utils.get_conn_mongo()
@@ -30,8 +31,9 @@ def work():
 
     db.video_languages.drop()
     for amid in amids:
-##        if not db.video_languages.find_one({"_id": amid}):
-        q.put(amid)
+        # get all entries for "full" mode, only new ones otherwise (faster)
+        if mode == "full" or not db.video_languages.find_one({"_id": amid}):
+            q.put(amid)
 
     q.join()
 

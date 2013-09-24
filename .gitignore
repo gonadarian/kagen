@@ -1,4 +1,5 @@
 *.py[cod]
+run.ini
 auth.ini
 manage.py
 kagen/settings.py
