@@ -20,10 +20,10 @@ whitespace = re.compile('^\s*\n', re.MULTILINE)
 dir_data = config["paths"]["dir_data"]
 dir_pages = config["paths"]["dir_pages"]
 dir_resources = config["paths"]["dir_resources"]
+lang = config["run"]["language"]
 
 
 def work():
-    lang = config["main"]["language"]
     translation.activate(lang)
     db = utils.get_conn_mongo()
     mappings = utils.load_json("{}{}".format(dir_data, "youtube-mappings.json"))
@@ -76,9 +76,9 @@ def work():
                 filename = "video-en-{}.html".format(video["ytid"])
                 save_page(template, data, path, filename)
                 if "sync" in video:
-                    data["sr"] = True
-                    ytid_sr = video["sync"]["id"]
-                    filename = "video-sr-{}.html".format(ytid_sr)
+                    data["loc"] = True
+                    ytid_loc = video["sync"]["id"]
+                    filename = "video-{}-{}.html".format(lang, ytid_loc)
                     save_page(template, data, path, filename)
 
     # preparing data for sitemap xml
@@ -164,14 +164,23 @@ def prep_page(page, db, mappings):
             video["ka"] = ka
             sub = db.video_subtitles.find_one({"_id": amid})
             video["subtitle"] = sub
+
             # TODO prepare on mongo side...
-            sheet = db.spreadsheet.find_one({"_id": ytid}, {"ytid_sr": 1})
-            ytid_sr = sheet["ytid_sr"]
-            if not ytid_sr and ytid in mappings:
-                ytid_sr = mappings[ytid]
-            if ytid_sr:
-                sync = db.youtube_videos.find_one({"_id": ytid_sr})
-                video["sync"] = sync
+            ytid_loc_key = "ytid_{}".format(lang)
+            sheet = db.spreadsheet.find_one({"_id": ytid}, {ytid_loc_key: 1})
+            if not sheet:
+                logger.error("\tMissing video in spreadsheet: {}".format(ytid))
+            else:
+                ytid_loc = sheet[ytid_loc_key]
+                if not ytid_loc and ytid in mappings:
+                    ytid_loc = mappings[ytid]
+                if ytid_loc:
+                    sync = db.youtube_videos.find_one({"_id": ytid_loc})
+                    if sync:
+                        video["sync"] = sync
+                    else:
+                        logger.warning("Missing dubbed video '{}'".format(ytid_loc))
+
             videos.append(video)
 
         if len(videos):
@@ -215,6 +224,7 @@ def empty(doc):
     return True
 
 def save_page(template, data, path, filename):
+    data["lang"] = lang
     context = Context(data)
     page = template.render(context)
     page = whitespace.sub('', page)

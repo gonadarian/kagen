@@ -25,7 +25,7 @@
     <a target="_blank" href="{{ video.ka.ka_url }}" title="{% blocktrans with title=video.amara.title %}Video '{{ title }}' on Khan Academy{% endblocktrans %}">
         <img class="leaf" src="{{ root }}leaf.png" alt="{% trans "Khan Academy" %}">
     </a>
-    <a target="_blank" href="http://www.amara.org/en/videos/{{ video.amid }}/sr/{{ video.amara.id }}" title="{% blocktrans with title=video.amara.title %}Translate video '{{ title }}'{% endblocktrans %}">
+    <a target="_blank" href="http://www.amara.org/en/videos/{{ video.amid }}/{{ lang }}/{{ video.amara.id }}" title="{% blocktrans with title=video.amara.title %}Translate video '{{ title }}'{% endblocktrans %}">
         <img class="amara" src="{{ root }}amara.png" alt="{% trans "Amara" %}">
     </a>
 </h3>
@@ -34,10 +34,10 @@
     <meter min="0" max="100" high="95" low="50" optimum="100" value="{{ video.subtitle.sub_percent }}">({{ video.subtitle.sub_percent }}% {% trans "completed" %})</meter>
 </p>
 <div>
-    {% if not sr %}
+    {% if not loc %}
     <video id="ka-video" class="video-js vjs-default-skin" controls width="640" height="480" poster="http://s3.amazonaws.com/KA-youtube-converted/{{ video.ytid }}.mp4/{{ video.ytid }}.png" autoplay preload="auto">
         <source type="video/mp4" src="http://s3.amazonaws.com/KA-youtube-converted/{{ video.ytid }}.mp4/{{ video.ytid }}.mp4">
-        <track kind="subtitles" src="{{ root }}srt/{{ video.amid }}.srt" srclang="sr" label="Serbian" default>
+        <track kind="subtitles" src="{{ root }}srt/{{ video.amid }}-{{ lang }}.srt" srclang="{{ lang }}" label="{{ video.amara.name }}" default>
     </video>
     {% else %}
     <iframe id="ka-video" width="640" height="480" src="http://www.youtube.com/embed/{{ video.sync.id }}?autoplay=1" autohide="1" frameborder="0" allowfullscreen></iframe>

@@ -12,13 +12,13 @@ from kagen.utils import config
 
 logger = utils.get_logger("languages")
 dir_data = config["paths"]["dir_data"]
+lang = config["run"]["language"]
 q = Queue()
 dtf = "%Y-%m-%dT%H:%M:%S"
 
 
 def work():
     tstart = time.time()
-    lang = config["main"]["language"]
     mode = config["run"]["mode"]
     pool_size = int(config["main"]["thread_pool_size"])
 
@@ -27,7 +27,7 @@ def work():
     amids = [mapping["amid"] for mapping in mappings]
     errors = utils.load_json("{}language-errors.json".format(dir_data))
 
-    [LangGetter(db, lang, errors) for i in range(pool_size)]
+    [LangGetter(db, errors) for i in range(pool_size)]
 
     db.video_languages.drop()
     for amid in amids:
@@ -42,10 +42,9 @@ def work():
 
 class LangGetter(Thread):
 
-    def __init__(self, db, lang, errors):
+    def __init__(self, db, errors):
         Thread.__init__(self)
         self.db = db
-        self.lang = lang
         self.errors = errors
         self.conn = utils.get_conn()
         self.daemon = True
@@ -58,7 +57,7 @@ class LangGetter(Thread):
             q.task_done()
 
     def doit(self, amid):
-        langid = self.lang
+        langid = lang
         if amid in self.errors:
             langid = self.errors[amid]["good"]
         query = "/api2/partners/videos/{}/languages/{}/"
@@ -73,7 +72,7 @@ class LangGetter(Thread):
             doc["created"] = datetime.strptime(doc["created"], dtf)
             self.db.video_languages.insert(doc)
             message = "found new title in {} for {}"
-            logger.debug(message.format(self.lang, amid))
+            logger.debug(message.format(lang, amid))
         except:
             message = "{} - {}".format(sys.exc_info()[0], sys.exc_info()[1])
             logger.error(message)

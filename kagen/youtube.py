@@ -13,15 +13,22 @@ logger = utils.get_logger("youtube")
 def work():
     dtf = "%Y-%m-%dT%H:%M:%S.%fZ"
     yt_key = config["keys"]["youtube_key"]
-    chid = config["keys"]["youtube_channel"]
+    yt_user = config["run"]["youtube_user"]
     youtube = utils.get_conn_youtube()
     db = utils.get_conn_mongo()
+
+    query_base = "/youtube/v3/channels?part=id&forUsername={}&maxResults=50&key={}"
+    query = query_base.format(yt_user, yt_key)
+    doc = utils.get_response_json(youtube, query)
+    chid = doc["items"][0]["id"]
+    logger.info("Channel ID: {}".format(chid))
 
     playlists = []
     query_base = "/youtube/v3/playlists?part=snippet&channelId={}&maxResults=50&key={}"
     query = query_base.format(chid, yt_key)
     doc = utils.get_response_json(youtube, query)
     playlists.extend(doc["items"])
+    logger.info("Playlist count: {}".format(len(playlists)))
 
     query_base = "/youtube/v3/playlistItems?part=contentDetails&playlistId={}&maxResults=50&key={}"
     for playlist in playlists:
@@ -44,14 +51,21 @@ def work():
     db.youtube_playlists.insert(playlists)
 
     videos = []
+    ytids = []
     for playlist in playlists:
+        message = "\tPlaylist '{}' count: {}"
+        logger.info(message.format(playlist["_id"], len(playlist["items"])))
         for item in playlist["items"]:
             ytid = item["ytid"]
             query = "/youtube/v3/videos?part=snippet&id={}&maxResults=50&key={}"
             query = query.format(ytid, yt_key)
             doc = utils.get_response_json(youtube, query)
             for video in doc["items"]:
-                videos.extend(doc["items"])
+                if ytid not in ytids:
+                    videos.append(video)
+                    ytids.append(ytid)
+                else:
+                    logger.warn("\t\tDuplicate video ID: {}".format(ytid))
 
     for video in videos:
         video["_id"] = video["id"]

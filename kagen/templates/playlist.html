@@ -34,7 +34,7 @@
                 <a target="_blank" href="{{ video.ka.ka_url }}" title="{% blocktrans with title=video.amara.title %}Watch video '{{ title }}'{% endblocktrans %}">
                     <img class="leaf" src="{{ root }}leaf.png" alt="{% trans "Khan Academy" %}">
                 </a>
-                <a target="_blank" href="http://www.amara.org/en/videos/{{ video.amid }}/sr/{{ video.amara.id }}" title="{% trans "Translate video" %} '{{ video.amara.title }}'">
+                <a target="_blank" href="http://www.amara.org/en/videos/{{ video.amid }}/{{ lang }}/{{ video.amara.id }}" title="{% trans "Translate video" %} '{{ video.amara.title }}'">
                     <img class="amara" src="{{ root }}amara.png" alt="{% trans "Amara" %}">
                 </a>
             </h4>
@@ -52,7 +52,7 @@
                 </div>
                 {% if video.sync %}
                 <div class="snapshoot">
-                    <a href="{{ root }}{{ tutorial.path }}{{ tutorial.page }}/video-sr-{{ video.sync.id }}.html" title="{% blocktrans with title=video.amara.title %}Watch video '{{ title }}' in Serbian{% endblocktrans %}">
+                    <a href="{{ root }}{{ tutorial.path }}{{ tutorial.page }}/video-{{ lang }}-{{ video.sync.id }}.html" title="{% blocktrans with title=video.amara.title %}Watch video '{{ title }}' in Serbian{% endblocktrans %}">
                         <img src="http://i.ytimg.com/vi/{{ video.sync.id }}/3.jpg" alt="{% trans video.sync.title %}">
                         <span>{% trans "Serbian" %}</span>
                     </a>

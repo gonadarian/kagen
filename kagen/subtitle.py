@@ -10,23 +10,22 @@ from kagen.utils import config
 
 logger = utils.get_logger("subtitle")
 dir_pages_srt = config["paths"]["dir_pages_srt"]
+lang = config["run"]["language"]
 q = Queue()
 
 
 def work():
     tstart = time()
-    lang = config["main"]["language"]
     pool_size = int(config["main"]["thread_pool_size"])
 
     db = utils.get_conn_mongo()
     db.video_subtitles.drop()
     db.video_subtitles_en.drop()
     db.video_subtitles_srt.drop()
-    [SubGetter(db, lang) for i in range(pool_size)]
+    [SubGetter(db) for i in range(pool_size)]
 
     criteria = {"$nor": [{"versions": {"$exists": False}}, {"versions": {"$size": 0}}]}
     [q.put(language) for language in db.video_languages.find(criteria)]
-##    q.put({"_id": "PGqBxjf24r1A", "id": "sr"})
 
     q.join()
 
@@ -35,10 +34,9 @@ def work():
 
 class SubGetter(Thread):
 
-    def __init__(self, db, lang):
+    def __init__(self, db):
         Thread.__init__(self)
         self.db = db
-        self.lang = lang
         self.conn = utils.get_conn()
         self.daemon = True
         self.start()
@@ -89,7 +87,7 @@ class SubGetter(Thread):
         response = utils.get_response(self.conn, query)
         doc = {"_id": amid, "srt": response}
         self.db.video_subtitles_srt.insert(doc)
-        filename = "{}{}.srt".format(dir_pages_srt, amid)
+        filename = "{}{}-{}.srt".format(dir_pages_srt, amid, lang)
         utils.save_text_binary(filename, response.encode('utf8'))
 
     def get_lines(self, subtitles):
