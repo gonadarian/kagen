@@ -27,6 +27,7 @@ def work():
     translation.activate(lang)
     db = utils.get_conn_mongo()
     mappings = utils.load_json("{}{}".format(dir_data, "youtube-mappings.json"))
+    mappings = mappings[lang] if lang in mappings else {}
 
     # preparing data for tutorial htmls
 
@@ -225,6 +226,7 @@ def empty(doc):
 
 def save_page(template, data, path, filename):
     data["lang"] = lang
+    data["social"] = config["social"]
     context = Context(data)
     page = template.render(context)
     page = whitespace.sub('', page)
@@ -237,9 +239,13 @@ def save_page(template, data, path, filename):
 def copy_resources(src, dest):
     files = os.listdir(src)
     for filename in files:
-        path = os.path.join(src, filename)
-        if (os.path.isfile(path)):
-            shutil.copy(path, dest)
+        src_path = os.path.join(src, filename)
+        if (os.path.isfile(src_path)):
+            shutil.copy(src_path, dest)
+        elif (os.path.isdir(src_path)):
+            dest_dir = "{}{}".format(dest, filename)
+            shutil.rmtree(dest_dir)
+            shutil.copytree(src_path, dest_dir)
 
 
 @utils.entry_point

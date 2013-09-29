@@ -13,8 +13,8 @@ from kagen.utils import config
 logger = utils.get_logger("languages")
 dir_data = config["paths"]["dir_data"]
 lang = config["run"]["language"]
+dtf = config["main"]["fmt_date_yt"]
 q = Queue()
-dtf = "%Y-%m-%dT%H:%M:%S"
 
 
 def work():
@@ -26,6 +26,7 @@ def work():
     mappings = db.video_mappings.find({}, {"amid": True })
     amids = [mapping["amid"] for mapping in mappings]
     errors = utils.load_json("{}language-errors.json".format(dir_data))
+    errors = errors[lang]
 
     [LangGetter(db, errors) for i in range(pool_size)]
 

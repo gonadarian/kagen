@@ -23,10 +23,10 @@
 <h3>
     {% trans "Video" %}: {{ video.amara.title|default:_("...no title") }}
     <a target="_blank" href="{{ video.ka.ka_url }}" title="{% blocktrans with title=video.amara.title %}Video '{{ title }}' on Khan Academy{% endblocktrans %}">
-        <img class="leaf" src="{{ root }}leaf.png" alt="{% trans "Khan Academy" %}">
+        <img class="leaf" src="{{ root }}img/ka.png" alt="{% trans "Khan Academy" %}">
     </a>
     <a target="_blank" href="http://www.amara.org/en/videos/{{ video.amid }}/{{ lang }}/{{ video.amara.id }}" title="{% blocktrans with title=video.amara.title %}Translate video '{{ title }}'{% endblocktrans %}">
-        <img class="amara" src="{{ root }}amara.png" alt="{% trans "Amara" %}">
+        <img class="amara" src="{{ root }}img/am.png" alt="{% trans "Amara" %}">
     </a>
 </h3>
 <p>

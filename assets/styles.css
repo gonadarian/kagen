@@ -9,7 +9,7 @@ progress, meter {display: inline;}
 p {opacity: .8;}
 p {margin-left: 1em;}
 em {font-family: 'MuseoSans500Italic',Helvetica,Arial,sans-serif;}
-ul {list-style-image: url('khanacademy.png');}
+ul {list-style-image: url('img/khanacademy.png');}
 a {color: #005987; text-decoration: none;}
 a:hover {color: #678D00; text-decoration: none;}
 a img {border: 0;}
@@ -23,7 +23,7 @@ a img {border: 0;}
 #like {padding-bottom: 0.5em;}
 #like div {padding-bottom: 0.3em;}
 #social {padding-top: 0.8em; position: absolute; top: 0; right: 0; width: 174px;}
-a.social {background: #678D00 url(socials.png) no-repeat; -moz-border-radius: 3px -webkit-border-radius: 3px; border-radius: 3px; display: block; height: 48px; overflow: hidden; text-indent: -999px; width: 48px; float:right; margin-left: 0.5em;}
+a.social {background: #678D00 url('img/socials.png') no-repeat; -moz-border-radius: 3px -webkit-border-radius: 3px; border-radius: 3px; display: block; height: 48px; overflow: hidden; text-indent: -999px; width: 48px; float:right; margin-left: 0.5em;}
 a.social:hover {background-color: #005987;}
 #social-fb {background-position: -96px 0;}
 #social-gp {background-position: -144px 0;}

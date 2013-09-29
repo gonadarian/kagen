@@ -52,7 +52,7 @@ def get_logger(name, level=logging.INFO):
     """ Create a logger instance with file and console handlers. """
     logger = logging.getLogger(name)
     logger.setLevel(level)
-    fmt_date = config["main"]["fmt_date"]
+    fmt_date = config["main"]["fmt_date_log"]
 
     dir_output = config["paths"]["dir_output"]
     if not os.path.exists(dir_output):
